@@ -22,7 +22,15 @@
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+/* latin */<button class="collapsible" id="collapsible-button-0" onclick="toggleCollapsibleSectionWithAnimation.call(this)"><b>Model</b> (show/hide)</button>
+  <div class="collapsible-content" id="collapsible-section-0">
+
+  <h1>
+  content
+  </h1>
+
+
+  </div>
 @font-face {
   font-family: 'Lato';
   font-style: italic;
@@ -80,7 +88,8 @@ th,
 tr,
 p,
 a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+  /*font-family: 'Georgia', Verdana, Helvetica, sans-serif;*/
   font-size: 14px
 }
 
@@ -98,11 +107,6 @@ papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700
-}
-
-name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
 }
 
 .one {
@@ -129,3 +133,138 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+
+
+hr.soft {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    padding: 0;
+    margin: 0;
+}
+
+#small-caps {
+  font-variant-caps: small-caps;
+}  
+
+#moreprojects {
+    display: none;
+}
+
+.showmore {
+    border: 1px solid #CCC;
+    padding: 10px;
+    font-size: 24px;
+    width: 200px;
+    text-align: center;
+    color: #999;
+    margin: 0px auto;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.showmore:hover {
+    color: #333;
+}
+
+
+ul.a {
+  list-style-type:none;
+  margin:20px;
+  padding:0;
+}
+
+
+.title .heading { 
+  /*font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 30px;
+  font-variant-caps: small-caps;
+  float:left 
+  /*text-decoration: underline;*/
+
+}
+
+.title .expand { 
+  float:right 
+}
+
+name {
+  /*font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 50px;
+  font-variant-caps: small-caps;  
+}
+
+
+/*
+Image Class - Optional
+Can replace with : hoverZoomLink
+*/
+.dp {
+    width: 18rem;
+    height: auto;
+    border-radius: 3px;
+    /*box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);*/
+    margin-bottom: 4rem;
+}
+
+.button {
+  /*transition-duration: 7s;*/
+}
+
+
+.collapsible {
+  background-color: #f0f0f0;
+  color: #000000;
+  cursor: pointer;
+  padding: 2px 20px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 30px;
+  font-variant-caps: small-caps;
+  /*border: 1px solid #000000;*/
+}
+
+.active {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+.collapsible:hover {
+  background-color: #eaeaea;
+  color: #000000;
+  transition-duration: 0.01s;
+}
+
+.content {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.header {
+  /*background-color: #111111;*/
+  /*padding: 0px 0px;*/
+  /*border-spacing: 0px;*/
+  /*padding-bottom: 1em;*/
+  /*white-space:nowrap;*/
+  /*height : 200px;*/
+  /*border-radius: 5px;*/
+  /*width: 90%;*/
+
+}
+
+.bg_colour {
+  background-color: #ffffff;
+}
+

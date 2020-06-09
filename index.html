@@ -1,287 +1,640 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- js script to toggle section visibility. -->
+<script type="text/javascript">
+	 function toggle_vis(id) {
+			 var e = document.getElementById(id);
+			 if (e.style.display == 'none')
+					 e.style.display = 'inline';
+			 else
+					 e.style.display = 'none';
+	 }
+</script>
+
+<html lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <!-- ===============================================================================================================================================-->
 <!-- GOOGLE ANALYTICS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159909084-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-159909084-1');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-159909084-1');
 </script>
+
+
 
 <!-- ===============================================================================================================================================-->
 <!-- TAB-BAR  -->
-  <title>Aditya Ahuja</title>
-  <meta name="author" content="Aditya Ahuja">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/jpg" href="images/pentagram.jpg">
+	<title>Aditya Ahuja</title>
+	<meta name="author" content="Aditya Ahuja">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" type="image/jpg" href="images/pentagram.jpg">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
 
+
+<body class="bg_colour">
+	<table border=0 class="bg_colour" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr style="padding:0px">
+			<td style="padding:0px">
+
+
 <!-- ===============================================================================================================================================-->
-<!-- HEAD -->
-<body>
-  <table border=0 style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table border=0 tyle="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Aditya Ahuja</name>
-              </p>
-              <p>
-                I am a junior Computer Science undergraduate at 
-                <a href="https://en.wikipedia.org/wiki/Birla_Institute_of_Technology_and_Science,_Pilani">BITS Pilani</a>, 
-                and an undergraduate researcher at the 
-                <a href="https://www.bits-pilani.ac.in/goa/appcair/people">APPCAIR Lab, BITS Goa</a> 
-                where I am currently working on Neuro Symbolic Modeling under the supervision of
-                <a href="https://scholar.google.com.au/citations?user=zpNTeogAAAAJ&hl=en"> Prof. Ashwin Srinivasan</a>.
-                <br><br>
-                I've worked on various Research and Personal projects in the fields of Deep Learning, Computer Vision, Natural Language Processing, Signal Processing and Neuroscience. 
-                Recently I've been exploring symbolic/probablistic approaches to Artificial Intelligence. 
-                <br><br>
-                I am a core member of the <a href="https://sforaidl.github.io/">Society for Artificial Intelligence and Deep Learning</a> where we discuss upcomming Deep Learning research and work on projects. I've  been the mentor for several Deep Learning and Machine Learning courses focused on our universities freshmen students.
-                <br><br>
-                I've also participated in a lot of algorithmic programming competitions on <a href="https://codeforces.com/profile/adiah">online judges</a> writing (efficient) code to solve resource constrained algorithmic challenges.
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:ahuja.aditya1452@gmail.com">Email</a> 
-                &nbsp|&nbsp
-                <a href="cv.pdf">CV</a> 
-                &nbsp|&nbsp
-                <a href="resume.pdf">Resume</a> 
-                &nbsp|&nbsp
-                <a href="https://github.com/adiah80">Github</a> 
-                &nbsp|&nbsp
-                <a href="https://www.linkedin.com/in/aditya-ahuja-37b57114b/">LinkedIn</a> 
-                &nbsp|&nbsp
-                <a href="https://www.stopstalk.com/user/profile/adi_ahuja">StopStalk</a>
-                
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/Aditya_Ahuja.jpg"><img style="width:70%;max-width:70%" alt="profile photo" src="images/Aditya_Ahuja.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        
+<!-- NAME -->
+
+				<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+					
+					<tr><td style="padding:10px"></td></tr>
+
+
+					<tr >
+						<td colspan="2" class="header">
+							<br>
+							<p style="text-align:center">
+								<name>Aditya Ahuja</name>
+							</p>
+						</td>
+					</tr>
+
+					<tr>
+					<td colspan="2">
+						<p style="text-align:center">
+							[
+							<a href="#news">News</a>
+							&nbsp|&nbsp
+							<a href="#work">Work Experience</a>
+							&nbsp|&nbsp
+							<a href="#teaching">Teaching</a>
+							&nbsp|&nbsp
+							<a href="#research">Research</a>
+							&nbsp|&nbsp
+							<a href="#projects">Projects</a>  
+							]
+						</p>
+					</td>
+					</tr>
+				</tbody></table>
+				<hr class="soft">
+
+
+<!-- ===============================================================================================================================================-->
+<!-- ABOUT -->
+				<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+					<tr style="padding:0px">
+
+						<td style="padding:2.5%;width:63%;vertical-align:middle">
+							<p>
+								I am a junior CS undergraduate at 
+								<a href="https://en.wikipedia.org/wiki/Birla_Institute_of_Technology_and_Science,_Pilani">BITS Pilani</a>, 
+								and an undergraduate researcher at the 
+								<a href="https://www.bits-pilani.ac.in/goa/appcair/people">APPCAIR Lab, BITS Goa</a> (collaborating with 
+								<a href="https://www.tcs.com/tcs-research"> TCS Research</a>)
+								where I am currently working on Neuro Symbolic Modeling under the supervision of
+								<a href="https://scholar.google.com.au/citations?user=zpNTeogAAAAJ&hl=en"> Prof. Ashwin Srinivasan</a>.
+								<br><br>
+
+								I am currently a research intern at <a href="https://www.ecmwf.int/">ECMWF</a> under <a href="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/peter-dueben">Prof. Peter Dueben</a>, wherein I'm building Deep Learning models to detect Time Series anomalies in metrics for their data services. I also spent an awesome summer at <a href="https://www.media.net/">Media.net</a>, working with the Ad-Experience team on malware detection in web advertisements.
+								<br><br>
+
+								I've worked on various Research and Personal projects in the fields of Deep Learning, Computer Vision, Natural Language Processing, Signal Processing and Neuroscience. 
+								Recently I've been exploring symbolic/probabilistic approaches to Artificial Intelligence. 
+								<br><br>
+
+								I am also the president of <a href="https://www.saidl.in/home">Society for Artificial Intelligence and Deep Learning (SAiDL)</a>, where we discuss upcoming Deep Learning research and work on projects. I've taught several courses related to Machine Learning and Deep Learning to freshmen students.
+								<br><br>
+								
+								I've also participated in a lot of algorithmic programming competitions on <a href="https://codeforces.com/profile/adiah">online judges</a>, writing (efficient) code to solve resource-constrained algorithmic challenges.
+							</p>
+							<p style="text-align:center">
+								<a href="mailto:ahuja.aditya1452@gmail.com">Email</a> 
+								&nbsp|&nbsp
+								<a href="CV__Aditya_Ahuja.pdf">CV</a> 
+								&nbsp|&nbsp
+								<a href="Resume__Aditya_Ahuja.pdf">Resume</a> 
+								&nbsp|&nbsp
+								<a href="https://github.com/adiah80">Github</a> 
+								&nbsp|&nbsp
+								<a href="https://www.linkedin.com/in/aditya-ahuja-37b57114b/">LinkedIn</a> 
+								&nbsp|&nbsp
+								<a href="https://www.stopstalk.com/user/profile/adi_ahuja">StopStalk</a>
+								&nbsp|&nbsp
+								<a href="https://sourcerer.io/adiah80">Sourcerer</a>
+								
+							</p>
+						</td>
+						<td style="padding:2.5%;width:40%;max-width:40%">
+							<a href="images/Aditya_Ahuja.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/Aditya_Ahuja.jpg" class="dp"></a>
+						</td>
+					</tr>
+
+				</tbody></table>
+				<hr class="soft">
+
+
+
+
+<!-- ===============================================================================================================================================-->
+<!-- NEWS -->
+
+				<br>
+				<button type="button" class="collapsible" id="news">News</button>
+				<div class="content" style="max-height: 100%">
+
+				<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+						<tr>
+						<td style="padding:0px;width:100%;vertical-align:middle">
+
+							<!-- <div class="title">
+							  <span class="heading" id="news">News</span>fafaf
+							  <span class="expand">[ <a href="javascript:toggle_vis('expand_news')">+</a> ]</span>
+							</div>
+
+							
+							<p>&nbsp</p><p>&nbsp</p> -->
+							<div id="expand_news" style="display:inline">
+								<p>
+									<ul class="a">
+										<li>
+										<p style="color:purple; display:inline">[ May '20 ]</p> -  
+										I'll be mentoring a 
+										<a href="https://github.com/SforAiDl/SAiDL-Season-of-Code#5-twitter-feed-distillation">summer project</a> 
+										with 
+										<a href="https://ajaysub110.github.io/">Ajay Subramian</a>
+										for the
+										<a href="https://github.com/SforAiDl/SAiDL-Season-of-Code">SAiDL-Season-of-Code</a>.
+										</li>
+
+										<li>
+										<p style="color:purple; display:inline">[ May '20 ]</p> -  
+										I'll be working as an ML research intern at 
+										<a href="https://www.ecmwf.int/">ECMWF</a>
+										as part of their summer program - 
+										<a href="https://esowc.ecmwf.int/">ESoWC</a>.
+										</li>
+
+										<li>
+										<p style="color:purple; display:inline">[ May '20 ]</p> -  
+										I'll be interning at 
+										<a href="https://www.media.net/">Media.net</a>
+										(Directi) as part of their Ad-Experience team. 
+										</li>
+
+										<li>
+										<p style="color:purple; display:inline">[ Jan '20 ]</p> -  
+										I'll be working on a sponsored project with 
+										<a href="https://www.tcs.com/tcs-research">TCS Research</a> 
+										on Neuro-Symbolic Modeling. 
+										</li>
+
+										<li>
+										<p style="color:purple; display:inline">[ Jan '20 ]</p> -  
+										I'll be TAing the 
+										<a href="https://bits-f464.github.io/">Machine Learning Course</a> 
+										at BITS Pilani, Goa.
+										</li>
+										
+										<li>
+										<p style="color:purple; display:inline">[ May '19 ]</p> -  
+										I'll be a mentor for this summers'
+										<a href="https://sites.google.com/view/qstp19/home#h.p_CTXtavYW-HBM">Machine Learning QSTP course</a>
+										along with 
+										<a href="https://www.linkedin.com/in/rijul-ganguly-22629b162/">Rijul</a>
+										and
+										<a href="https://in.linkedin.com/in/souradeep-chakraborty-73a8607b">Saura</a>.
+										</li>
+
+									</ul>
+								</p>
+							</div>	
+						</td>
+						</tr>
+				</tbody></table>
+				<hr class="soft">
+				</div>
+
+
+
+
+
+
+
+
+<!-- ===============================================================================================================================================-->
+<!-- WORK EXPERIENCE -->
+
+				<br><br>
+				<button type="button" class="collapsible" id="work">Work Experience</button>
+				<div class="content" style="max-height: 100%">
+
+				<table border=0 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+						<tr>
+						<td style="padding:0px;width:100%;vertical-align:middle">
+
+							<!-- <div class="title">
+							  <span class="heading" id="work">Work Experience</span>
+							  <span class="expand">[ <a href="javascript:toggle_vis('expand_work')">+</a> ]</span>
+							</div>
+							
+							<p>&nbsp</p><p>&nbsp</p> -->
+							<div id="expand_work" style="display:inline">
+								<p>
+									<ul class="a">
+
+										<li>
+											<p style="color:purple; display:inline">[ May '20 - Sep '20 ]</p> - 
+											<a href="https://www.ecmwf.int/">ECMWF</a> - 
+											Machine Learning Research Intern.
+										</li>
+
+										<li>
+											<p style="color:purple; display:inline">[ May '20 - Jun '20 ]</p> - 
+											<a href="https://www.bits-pilani.ac.in/goa/appcair/people">Media.net (Directi)</a> - 	
+											Summer SWE Intern.	
+										</li>
+
+										<li>
+											<p style="color:purple; display:inline">[ Jan '20 - May '20 ]</p> - 
+											<a href="https://www.bits-pilani.ac.in/goa/appcair/people">APPCAIR Lab</a>
+											& 
+											<a href="https://www.tcs.com/tcs-research">TCS Research</a> - 
+											Research Intern.								
+										</li>
+
+										<li>
+											<p style="color:purple; display:inline">[ May '19 - Jul '19 ]</p> - 
+											<a href="?">Bank of Maharashtra, Head Office</a> - 
+											Summer SWE Intern.	
+										</li>
+
+										<li>
+											<p style="color:purple; display:inline">[ Feb '19 - Apr '19 ]</p> - 
+											<a href="https://www.pixxel.space/">Pixxel</a> - 
+											Machine Learning Intern.								
+										</li>
+
+									</ul>
+								</p>
+						</td>
+						</tr>
+				</tbody></table>
+
+				<table border=0 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+					
+ 
+				</tbody>
+			</table>
+			<hr class="soft">
+			</div>	
+
+
+
+
+
+<!-- ===============================================================================================================================================-->
+<!-- TEACHING -->
+
+				<br><br>
+				<button type="button" class="collapsible" id="teaching">Teaching & Mentoring</button>
+				<div class="content" style="max-height: 100%">
+
+				<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+						<tr>
+						<td style="padding:0px;width:100%;vertical-align:middle">
+
+		<!-- 					<div class="title">
+							  <span class="heading" id="teaching">Teaching & Mentoring</span>
+							  <span class="expand">[ <a href="javascript:toggle_vis('expand_teach')">+</a> ]</span>
+							</div>
+							
+							<p>&nbsp</p><p>&nbsp</p> -->
+							<div id="expand_teach" style="display:inline">
+								<p>
+									<ul class="a">
+
+										<li>
+											<p style="color:purple; display:inline">[ Spring '20 ]</p> - 
+											<a href="https://bits-f464.github.io/">BITS F464: Machine Learning</a>									
+											- Teaching Assistant (TA).
+										</li>
+
+										<li>
+											<p style="color:purple; display:inline">[ Fall '19 ]</p> - 
+											<a href="http://bits-tip.github.io/index.html">Technology Incubator Programme, BITS Pilani</a> 							
+											- Project Mentor.
+										</li>
+
+
+										<li>
+											<p style="color:purple; display:inline">[ Summer '19 ]</p> - 
+											<a href="https://sites.google.com/view/qstp19/home#h.p_CTXtavYW-HBM">Quark-QSTP: Introduction to Machine Learning</a>									
+											- Instructor.
+										</li>
+									
+									</ul>
+								</p>
+
+						</td>
+						</tr>
+				</tbody>
+			</table>
+			<hr class="soft">
+			</div>
+
+
+
 <!-- ===============================================================================================================================================-->
 <!-- RESEARCH -->
-        <table border=0 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <h2 align="center">Research</h2>
-              <p>
-                My research interests include Deep Learning and Probabilistic Logic Reasoning, and novel ways of combining them to build robust and interpretable AI models.
-                <br><br>
-                I'm also interested in Computer Vision, specifically in the areas of continual (lifelong) learning.  
-              </p>
-            </td>
-            </tr>
-        </tbody></table>
 
-<!-- ===============================================================================================================================================-->
-        <table border=0 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+				<br><br>
+				<button type="button" class="collapsible" id="research">Research</button>
+				<div class="content" style="max-height: 100%">
 
-          <!-- ------------------------------------ -->
-          <!-- BONGARD -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/Bongard.png' border=1 height=120 width=170>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Developing a framework to model solutions for Bongard Problems</papertitle>
-              <br><b>Supervisor</b> : <a href="https://www.bits-pilani.ac.in/goa/ashwin/profile">Prof. Ashwin Srinivasan</a>
-              <br><p>
-                The <a href="https://en.wikipedia.org/wiki/Bongard_problem">Bongard problems</a> were introduced by Mikhail Moiseevich Bongard in 1967, in his classic pattern recognition book. <br><br>
+				<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+					<!-- 	<tr>
+						<td style="padding:20px;width:100%;vertical-align:middle" colspan="2">
+							<div class="title">
+								 <span class="heading" id="research">Research</span>
+							</div>
+						</td>
+						</tr>
+ -->
+					<!-- ------------------------------------ -->
+					<!-- BONGARD -->
+					<tr>
+						<td style="padding:20px;width:25%;vertical-align:middle">
+						<img src='images/Bongard.png' border=1 height=120 width=170>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Developing a framework to model solutions for Bongard Problems</papertitle>
+							<br><b>Supervisor</b>: <a href="https://www.bits-pilani.ac.in/goa/ashwin/profile">Prof. Ashwin Srinivasan</a>
+							<br><p>
+								The <a href="https://en.wikipedia.org/wiki/Bongard_problem">Bongard problems</a> were introduced by Mikhail Moiseevich Bongard in 1967, in his classic pattern recognition book. <br><br>
 
-                We use the DeepProbLog framework to model solutions to these problems by evaluating different hypotheses and then calculating their repective likelihoods.
+								We use the DeepProbLog framework to model solutions to these problems by evaluating different hypotheses and then calculating their respective likelihoods.
 
-               </p>
-            </td>
-          </tr>  
+							 </p>
+						</td>
+					</tr>  
 
-          <!-- ------------------------------------ -->
-          <!-- SEEG -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/SEEG.png' border=1 height=120 width=170>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Detecting schizophrenia using Electroencephalography Signals</papertitle>
-              <br><b>Supervisor</b> : <a href="https://universe.bits-pilani.ac.in/goa/amalinprince/profile/">Prof. Amalin Prince</a>
-              <br><p>
-                Schizophrenia is a mental disorder whith symptoms including hallucinations and episodes of psychosis. 
-                <br><br>
-                We develop a Deep Learning Pipeline for automated Schizophrenia detection using abnormalies in brain-wave patterns captured through EEG Data.
+					<tr><td colspan=2><hr class="soft"></td></tr>
 
-               </p>
-            </td>
-          </tr>  
+					<!-- ------------------------------------ -->
+					<!-- SEEG -->
+					<tr>
+						<td style="padding:20px;width:25%;vertical-align:middle">
+						<img src='images/SEEG.png' border=1 height=120 width=170>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Detecting schizophrenia using Electroencephalography Signals</papertitle>
+							<br><b>Supervisor</b>: <a href="https://universe.bits-pilani.ac.in/goa/amalinprince/profile/">Prof. Amalin Prince</a>
+							<br><p>
+								Schizophrenia is a mental disorder with symptoms including hallucinations and episodes of psychosis. 
+								<br><br>
+								We develop a Deep Learning Pipeline for automated Schizophrenia detection using abnormalities in brain-wave patterns captured through EEG Data.
 
-          <!-- ------------------------------------ -->
-          <!-- SNN -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/SNN.png' border=1 height=120 width=170>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Implementing Spiking-Time Dependent Plasticity on SpineCreator </papertitle>
-              <br><b>Supervisor</b> : <a href="https://sites.google.com/site/bsenbhattacharya/">Prof. Basabdatta Sen Bhattacharya</a>
-              <br><a href="data/SNN_report_Aditya_Ahuja.pdf">[ Report ]</a>
-              <a href="data/SNN_poster_Aditya_Ahuja.pdf">[ Poster ]</a>
-              <br><p>
-                Spike-Timing Dependent Plasticity, or STDP is the proposed theory which aims to relate temporal spike differences to changes in synaptic weights between participating neurons.
-                <br><br>
-                We explore how well STDP works on a model of the Basal ganglia, using the Izhikevich neuron, using SpineCreator to model the underlying networks.
-               </p>
-            </td>
-          </tr>  
-        </tbody>
-      </table>
+							 </p>
+						</td>
+					</tr>  
+
+					<tr><td colspan=2><hr class="soft"></td></tr>
+
+					<!-- ------------------------------------ -->
+					<!-- SNN -->
+					<tr>
+						<td style="padding:20px;width:25%;vertical-align:middle">
+						<img src='images/SNN.png' border=1 height=120 width=170>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Implementing Spiking-Time Dependent Plasticity on SpineCreator </papertitle>
+							<br><b>Supervisor</b>: <a href="https://sites.google.com/site/bsenbhattacharya/">Prof. Basabdatta Sen Bhattacharya</a>
+							<br><a href="data/SNN_report_Aditya_Ahuja.pdf">[ Report ]</a>
+							<a href="data/SNN_poster_Aditya_Ahuja.pdf">[ Poster ]</a>
+							<br><p>
+								Spike-Timing Dependent Plasticity, or STDP is the proposed theory which aims to relate temporal spike differences to changes in synaptic weights between participating neurons.
+								<br><br>
+								We explore how well STDP works on a model of the Basal ganglia, using the Izhikevich neuron, using SpineCreator to model the underlying networks.
+							 </p>
+						</td>
+					</tr>  
+				</tbody>
+			</table>
+			<hr class="soft">
+			</div>
+
+
+
+
 
 <!-- ===============================================================================================================================================-->
 <!-- PROJECTS -->
-        <table border=0 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <h2 align="center">Selected Projects</h2>
-             <!--  <p>
-                .....
-              </p> -->
-            </td>
-            </tr>
-        </tbody></table>
+
+				<br><br>
+				<button type="button" class="collapsible" id="projects">Projects</button>
+				<div class="content" style="max-height: 100%">
+
+				<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+						
+						<!-- <tr>
+						<td style="padding:20px;width:100%;vertical-align:middle" colspan="2">
+							<div class="title">
+								 <span class="heading" id="projects">Projects</span>
+							</div>
+						</td>
+						</tr> -->
+
+					<!-- ------------------------------------ -->
+					<!-- SPEECH EMOTION RECOGNITION -->
+					
+
+					<tr>
+						<td style="padding:20px;width:25%;vertical-align:middle">
+						<img src='images/Emotion_detection.jpg' border=1 height=120 width=170>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Emotion Recognition from Audio Signals</papertitle>
+							<br>[ <a href=https://github.com/adiah80/Speech-Emotion-Recognition>Code</a> ]
+									[ <a href=data/Emotion_Detection.html>HTML</a> ]
+							<br><p>    
+								Developed a Deep Learning pipeline for Emotion recognition and classification using speech data, on the <a href="https://arxiv.org/pdf/1810.02508.pdf"> MELD Dataset</a>.
+								<br><br>
+								Classified emotions across various emotions : [Disgust, Fear, Neutral, ...] across a highly unbalanced data sample. Used Mel-frequency cepstral coefficients (MFCCs) to form speech representations.
+							 </p>
+						</td>
+					</tr>  
+
+					<tr><td colspan=2><hr class="soft"></td></tr>
+
+					<!-- ------------------------------------ -->
+					<!-- MEME ANALYSIS -->
+					<tr>
+						<td style="padding:20px;width:25%;vertical-align:middle">
+						<img src='images/Meme.jpg' border=1 height=120 width=170>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Memotion Sentiment Analysis</papertitle>
+							<br>[ <a href="https://github.com/adiah80/Memotion-Sentiment-Analysis">Code</a> ]
+									[ <a href=data/Meme-Preprocessing.html>Preprocessing</a>, 
+									<a href=data/Meme-Fusion-Model.html>Model</a> ]
+							<br><p>
+								Integrated deep text and image processing models to build a Multimodal Sentiment Analysis system that classified emotions on Internet Memes across different categories. 
+								<br><br>This work was done on the <a href="https://competitions.codalab.org/competitions/20629">Sem-Eval</a> dataset.
+							 </p>
+						</td>
+					</tr>  
+
+					<tr><td colspan=2><hr class="soft"></td></tr>
+
+					<!-- ------------------------------------ -->
+					<!-- SIGNATURE  -->
+					<tr>
+						<td style="padding:20px;width:25%;vertical-align:middle">
+						<img src='images/Siamese.png' border=1 height=120 width=170>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Signature Verification using Siamese Networks</papertitle>
+							<br>[ <a href="https://github.com/adiah80/Automated-Signature-Verification">Code</a> ]
+									[ <a href=data/Signature-Verification.html>HTML</a> ]
+							<br><p>
+								Developed a Siamese Neural Net that performed few shot signature verification.
+								<br><br>
+								Taking a few sample signatures of a person, the model predicts whether the input 'query' signature is forged or authentic. 
+							 </p>
+						</td>
+					</tr>  
+
+					<tr><td colspan=2><hr class="soft"></td></tr>
+
+					<!-- ------------------------------------ -->
+					<!-- GENOMIC DATA -->
+					<tr>
+						<td style="padding:20px;width:25%;vertical-align:middle">
+						<img src='images/Genomic.png' border=1 height=120 width=170>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Visualizing Genomic data </papertitle>
+							<br>[ <a href="https://github.com/adiah80/Visualizing-genomic-data">Code</a> ]
+									[ <a href=data/Genomic.html>HTML</a> ]
+							<br><p>
+								Worked with genomic data from different geographical locations, plotting it after dimensionality reduction.
+								<br><br>
+								Demonstrated relations between geographic origin and DNA structure by generating different plots and identifying aggregations.
+					</tr>
+
+					<tr><td colspan=2><hr class="soft"></td></tr>
+
+					<!-- ------------------------------------ -->
+					<!-- IMAGE GENERATION WITH GANs -->
+					<tr>
+						<td style="padding:20px;width:25%;vertical-align:middle">
+						<img src='images/GANS.png' border=1 height=120 width=170>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Image Generation using GANs</papertitle>
+							<br>[ <a href="https://github.com/adiah80/GAN-comparisions">Code</a> ]
+									[ <a href=data/GAN.html>HTML</a> ]
+							<br><p>
+								Developed a Generative Adversarial Network (GAN) to generate new instances of the <a href="https://www.cs.toronto.edu/~kriz/cifar.html"> CIFAR Dataset</a>. 
+							 </p>
+						</td>
+					</tr>
+
+					<tr><td colspan=2><hr class="soft"></td></tr>
+
+					<!-- ------------------------------------ -->
+					<!-- WORD EMBEDDINGS -->
+					<tr>
+						<td style="padding:20px;width:25%;vertical-align:middle">
+						<img src='images/Embeddings.png' border=1 height=120 width=170>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Generating Word Embeddings</papertitle>
+							<br>[ <a href="https://github.com/adiah80/GloVe-word-embeddings">Code</a> ]
+									[ <a href=data/Word-Embeddings.html>HTML</a> ]
+							<br><p>
+								Generated word embeddings using <a href="https://nlp.stanford.edu/projects/glove/">GloVe</a>, and the <a href="https://ai.stanford.edu/~amaas/data/sentiment/"> Large Movie Review Dataset</a>.
+								<br><br>
+								Visualized the obtained embeddings on a 2D graph using Principal Component Analysis (PCA), and checked the obtained embeddings for semantic coherence.
+							 </p>
+							 
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<hr class="soft">
+		</div>
 
 <!-- ===============================================================================================================================================-->
-        <table border=0 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+			<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+				<tr>
+					<td style="padding:0px">
+						<br>
+						<p style="text-align:center;font-size:small;">
+						[ <a href="https://jonbarron.info/">Template</a> ]     
+						</p> 
+					</td>
+				</tr>
+			</tbody>
+			</table>
+			</td>
+		</tr>
+	</table>
 
-          <!-- ------------------------------------ -->
-          <!-- SPEECH EMOTION RECOGNITION -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/Emotion_detection.jpg' border=1 height=120 width=170>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Emotion Recognition from Audio Signals</papertitle>
-              <br>[ <a href=https://github.com/adiah80/Speech-Emotion-Recognition>Code</a> ]
-                  [ <a href=data/Emotion_Detection.html>HTML</a> ]
-              <br><p>
-                
-                Developed a Deep Learning pipeline for Emotion recognition and classification using speech data, on the <a href="https://arxiv.org/pdf/1810.02508.pdf"> MELD Dataset</a>.
-                <br><br>
-                Classified emotions across various emotions : [Disgust, Fear, Neutral, ...] across a highly unbalanced data sample. Used Mel-frequency cepstral coefficients (MFCCs) to form speech representations.
-               </p>
-            </td>
-          </tr>  
+<!-- 	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
 
-          <!-- ------------------------------------ -->
-          <!-- MEME ANALYSIS -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/Meme.jpg' border=1 height=120 width=170>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Memotion Sentiment Analysis</papertitle>
-              <br>[ <a href="https://github.com/adiah80/Memotion-Sentiment-Analysis">Code</a> ]
-                  [ <a href=data/Meme-Preprocessing.html>Preprocessing</a>, 
-                  <a href=data/Meme-Fusion-Model.html>Model</a> ]
-              <br><p>
-                Integrated deep text and image processing models to build a Multimodal Sentiment Analysis system that classified emotions on Internet Memes across different categories. 
-                <br><br>This work was done on the <a href="https://competitions.codalab.org/competitions/20629">Sem-Eval</a> dataset.
-               </p>
-            </td>
-          </tr>  
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var content = this.nextElementSibling;
+	    if (content.style.display === "block") {
+	      content.style.display = "none";
+	    } else {
+	      content.style.display = "block";
+	    }
+	  });
+	}
+	</script> -->
 
-          <!-- ------------------------------------ -->
-          <!-- SIGNATURE  -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/Siamese.png' border=1 height=120 width=170>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Signature Verification using Siamese Networks</papertitle>
-              <br>[ <a href="https://github.com/adiah80/Automated-Signature-Verification">Code</a> ]
-                  [ <a href=data/Signature-Verification.html>HTML</a> ]
-              <br><p>
-                Developed a Siamese Neural Net that performed few shot signature verification.
-                <br><br>
-                Taking a few sample signatures of a person, the model predicted whether the input 'query' signature fas forged or authentic. 
-               </p>
-            </td>
-          </tr>  
+	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
 
-          <!-- ------------------------------------ -->
-          <!-- GENOMIC DATA -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/Genomic.png' border=1 height=120 width=170>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Visualizing Genomic data </papertitle>
-              <br>[ <a href="https://github.com/adiah80/Visualizing-genomic-data">Code</a> ]
-                  [ <a href=data/Genomic.html>HTML</a> ]
-              <br><p>
-                Worked with genomic data from different geographical locations, plotting it after dimensionality reduction.
-                <br><br>
-                Demonstrated relations between geographic origin and DNA structure by generating different plots and identifying aggregations.
-          </tr>
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var content = this.nextElementSibling;
+	    if (content.style.maxHeight){
+	      content.style.maxHeight = null;
+	    } else {
+	      content.style.maxHeight = content.scrollHeight + "px";
+	    } 
+	  });
+	}
+	</script>
+<!-- 
+	<script>
+		function toggleCollapsibleSectionWithAnimation() {
+			this.classList.toggle("collapsible-active");
+			var buttonId = this.id;
+			var sectionId = buttonId.replace("button","section");
+			var content = document.getElementById(sectionId);
+	    var mHeight = window.getComputedStyle(content).maxHeight;
+			if (mHeight !== "0px"){
+			  content.style.maxHeight = "0px";
+			} else {
+			  content.style.maxHeight = "100%";
+			}
+		}
+	</script>
 
-          <!-- ------------------------------------ -->
-          <!-- IMAGE GENERATION WITH GANs -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/GANS.png' border=1 height=120 width=170>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Image Generation using GANs</papertitle>
-              <br>[ <a href="https://github.com/adiah80/GAN-comparisions">Code</a> ]
-                  [ <a href=data/GAN.html>HTML</a> ]
-              <br><p>
-                Developed a Generative Adversarial Network (GAN) to generate new instances of the <a href="https://www.cs.toronto.edu/~kriz/cifar.html"> CIFAR Dataset</a>. 
-               </p>
-            </td>
-          </tr>
-
-          <!-- ------------------------------------ -->
-          <!-- WORD EMBEDDINGS -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/Embeddings.png' border=1 height=120 width=170>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Generating Word Embeddings</papertitle>
-              <br>[ <a href="https://github.com/adiah80/GloVe-word-embeddings">Code</a> ]
-                  [ <a href=data/Word-Embeddings.html>HTML</a> ]
-              <br><p>
-                Generated word embeddings using <a href="https://nlp.stanford.edu/projects/glove/">GloVe</a>, and the <a href="https://ai.stanford.edu/~amaas/data/sentiment/"> Large Movie Review Dataset</a>.
-                <br><br>
-                Visualized the obtained embeddings on a 2D graph using Principal Component Analysis (PCA), and checked the obtained embeddings for semantic coherence.
-               </p>
-            </td>
-          </tr>
+	 -->
 
 
-        </tbody>
-      </table>
-
-
-<!-- ===============================================================================================================================================-->
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <tr>
-          <td style="padding:0px">
-            <br>
-            <p style="text-align:right;font-size:small;">
-            [ <a href="https://github.com/jonbarron/jonbarron_website">Template!</a> ]      
-          </td>
-        </tr>
-      </tbody>
-      </table>
-      </td>
-    </tr>
-  </table>
 </body>
 </html>
