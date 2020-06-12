@@ -9,6 +9,41 @@
 			 else
 					 e.style.display = 'none';
 	 }
+
+	 let coll = document.getElementsByClassName("collapsible");
+
+	 function isOpen(node){
+	 	// console.log(node.getAttribute('aria-expanded'));
+	 	return (node.getAttribute('aria-expanded') === null) || node.getAttribute('aria-expanded');
+	 }
+
+	 function ToggleAll(){
+		 let totalOpen = 0;
+		 for(let i=0; i<coll.length; i++){
+			 if(eval(isOpen(coll[i]))) totalOpen++;
+		 }
+		 console.log(totalOpen);
+
+		 if(totalOpen !== 0){
+			 for(let i=0; i<coll.length; i++){
+				 if(eval(isOpen(coll[i]))) coll[i].click();
+			 }
+		 }
+		 else{
+			 for(let i=0; i<coll.length; i++){
+				 coll[i].click();
+			 }
+		 }
+	 }
+
+	 function Expand(nodeID){
+		 let node = document.getElementById(nodeID);
+		 if(!eval(isOpen(node))){
+		 	console.log(node);
+		 	node.click();
+		 }
+	 }
+
 </script>
 
 <html lang="en"><head>
@@ -34,6 +69,11 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" type="image/jpg" href="images/pentagram.jpg">
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 
@@ -64,15 +104,15 @@
 					<td colspan="2">
 						<p style="text-align:center">
 							[
-							<a href="#news">News</a>
+							<a href="#news" onclick=Expand("news")>News</a>
 							&nbsp|&nbsp
-							<a href="#work">Work Experience</a>
+							<a href="#work" onclick=Expand("work")>Work Experience</a>
 							&nbsp|&nbsp
-							<a href="#teaching">Teaching</a>
+							<a href="#teaching" onclick=Expand("teaching")>Teaching</a>
 							&nbsp|&nbsp
-							<a href="#research">Research</a>
+							<a href="#research" onclick=Expand("research")>Research</a>
 							&nbsp|&nbsp
-							<a href="#projects">Projects</a>  
+							<a href="#projects" onclick=Expand("projects")>Projects</a>
 							]
 						</p>
 					</td>
@@ -97,37 +137,40 @@
 								<a href="https://scholar.google.com.au/citations?user=zpNTeogAAAAJ&hl=en"> Prof. Ashwin Srinivasan</a>.
 								<br><br>
 
-								I am currently a research intern at <a href="https://www.ecmwf.int/">ECMWF</a> under <a href="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/peter-dueben">Prof. Peter Dueben</a>, wherein I'm building Deep Learning models to detect Time Series anomalies in metrics for their data services. I also spent an awesome summer at <a href="https://www.media.net/">Media.net</a>, working with the Ad-Experience team on malware detection in web advertisements.
-								<br><br>
+								I am currently a research intern at <a href="https://www.ecmwf.int/">ECMWF</a>, working with
+								<a href="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/peter-dueben">Prof. Peter Dueben</a>,
+								and building Deep Learning models to detect anomalies in metrics for their data services. I also spent an
+								awesome summer at <a href="https://www.media.net/">Media.net</a>, working with the Ad-Experience team on malware
+								detection in web advertisements. <br><br>
 
-								I've worked on various Research and Personal projects in the fields of Deep Learning, Computer Vision, Natural Language Processing, Signal Processing and Neuroscience. 
-								Recently I've been exploring symbolic/probabilistic approaches to Artificial Intelligence. 
-								<br><br>
-
-								I am also the president of <a href="https://www.saidl.in/home">Society for Artificial Intelligence and Deep Learning (SAiDL)</a>, where we discuss upcoming Deep Learning research and work on projects. I've taught several courses related to Machine Learning and Deep Learning to freshmen students.
+								I am also the president of <a href="https://www.saidl.in/home">Society for Artificial Intelligence and
+								Deep Learning (SAiDL)</a>, where we discuss upcoming Deep Learning research and work on projects. I've taught
+								several courses related to Machine Learning and Deep Learning to freshmen students.
 								<br><br>
 								
-								I've also participated in a lot of algorithmic programming competitions on <a href="https://codeforces.com/profile/adiah">online judges</a>, writing (efficient) code to solve resource-constrained algorithmic challenges.
+								I've also participated in a lot of algorithmic programming competitions on
+								<a href="https://codeforces.com/profile/adiah">online judges</a>,
+								writing (efficient) code to solve resource-constrained algorithmic challenges.
 							</p>
 							<p style="text-align:center">
-								<a href="mailto:ahuja.aditya1452@gmail.com">Email</a> 
+								<a href="mailto:ahuja.aditya1452@gmail.com" target="blank">Email</a>
 								&nbsp|&nbsp
-								<a href="CV__Aditya_Ahuja.pdf">CV</a> 
+								<a href="CV__Aditya_Ahuja.pdf" target="blank">CV</a>
 								&nbsp|&nbsp
-								<a href="Resume__Aditya_Ahuja.pdf">Resume</a> 
+								<a href="Resume__Aditya_Ahuja.pdf" target="blank">Resume</a>
 								&nbsp|&nbsp
-								<a href="https://github.com/adiah80">Github</a> 
+								<a href="https://github.com/adiah80" target="blank">Github</a>
 								&nbsp|&nbsp
-								<a href="https://www.linkedin.com/in/aditya-ahuja-37b57114b/">LinkedIn</a> 
+								<a href="https://www.linkedin.com/in/aditya-ahuja-37b57114b/" target="blank">LinkedIn</a>
 								&nbsp|&nbsp
-								<a href="https://www.stopstalk.com/user/profile/adi_ahuja">StopStalk</a>
+								<a href="https://www.stopstalk.com/user/profile/adi_ahuja" target="blank">StopStalk</a>
 								&nbsp|&nbsp
-								<a href="https://sourcerer.io/adiah80">Sourcerer</a>
+								<a href="https://sourcerer.io/adiah80" target="blank">Sourcerer</a>
 								
 							</p>
 						</td>
 						<td style="padding:2.5%;width:40%;max-width:40%">
-							<a href="images/Aditya_Ahuja.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/Aditya_Ahuja.jpg" class="dp"></a>
+							<a href="images/Aditya_Ahuja.jpg" target="blank"><img style="width:100%;max-width:100%" alt="profile photo" src="images/Aditya_Ahuja.jpg" class="dp"></a>
 						</td>
 					</tr>
 
@@ -141,85 +184,70 @@
 <!-- NEWS -->
 
 				<br>
-				<button type="button" class="collapsible" id="news">News</button>
-				<div class="content" style="max-height: 100%">
+				<button type="button" class="collapsible" data-toggle="collapse" data-target="#content-1" id="news">news</button>
+				<div id="content-1" class="collapse in">
 
-				<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-						<tr>
-						<td style="padding:0px;width:100%;vertical-align:middle">
-
-							<!-- <div class="title">
-							  <span class="heading" id="news">News</span>fafaf
-							  <span class="expand">[ <a href="javascript:toggle_vis('expand_news')">+</a> ]</span>
-							</div>
-
-							
-							<p>&nbsp</p><p>&nbsp</p> -->
-							<div id="expand_news" style="display:inline">
-								<p>
-									<ul class="a">
-										<li>
-										<p style="color:purple; display:inline">[ May '20 ]</p> -  
-										I'll be mentoring a 
-										<a href="https://github.com/SforAiDl/SAiDL-Season-of-Code#5-twitter-feed-distillation">summer project</a> 
-										with 
-										<a href="https://ajaysub110.github.io/">Ajay Subramian</a>
-										for the
-										<a href="https://github.com/SforAiDl/SAiDL-Season-of-Code">SAiDL-Season-of-Code</a>.
-										</li>
-
-										<li>
-										<p style="color:purple; display:inline">[ May '20 ]</p> -  
-										I'll be working as an ML research intern at 
-										<a href="https://www.ecmwf.int/">ECMWF</a>
-										as part of their summer program - 
-										<a href="https://esowc.ecmwf.int/">ESoWC</a>.
-										</li>
-
-										<li>
-										<p style="color:purple; display:inline">[ May '20 ]</p> -  
-										I'll be interning at 
-										<a href="https://www.media.net/">Media.net</a>
-										(Directi) as part of their Ad-Experience team. 
-										</li>
-
-										<li>
-										<p style="color:purple; display:inline">[ Jan '20 ]</p> -  
-										I'll be working on a sponsored project with 
-										<a href="https://www.tcs.com/tcs-research">TCS Research</a> 
-										on Neuro-Symbolic Modeling. 
-										</li>
-
-										<li>
-										<p style="color:purple; display:inline">[ Jan '20 ]</p> -  
-										I'll be TAing the 
-										<a href="https://bits-f464.github.io/">Machine Learning Course</a> 
-										at BITS Pilani, Goa.
-										</li>
-										
-										<li>
-										<p style="color:purple; display:inline">[ May '19 ]</p> -  
-										I'll be a mentor for this summers'
-										<a href="https://sites.google.com/view/qstp19/home#h.p_CTXtavYW-HBM">Machine Learning QSTP course</a>
-										along with 
-										<a href="https://www.linkedin.com/in/rijul-ganguly-22629b162/">Rijul</a>
-										and
-										<a href="https://in.linkedin.com/in/souradeep-chakraborty-73a8607b">Saura</a>.
-										</li>
-
-									</ul>
-								</p>
-							</div>	
+				<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+					<tr>
+						<td class="tdNews">
+							<p style="color:purple; display:inline">[ May '20 ]</p>
 						</td>
-						</tr>
+						<td>
+							I'll be mentoring a
+							<a href="https://github.com/SforAiDl/SAiDL-Season-of-Code#5-twitter-feed-distillation">summer project</a> with
+							<a href="https://ajaysub110.github.io/">Ajay Subramian</a> for the
+							<a href="https://github.com/SforAiDl/SAiDL-Season-of-Code">SAiDL-Season-of-Code</a>.
+						</td>
+					</tr>
+					<tr>
+						<td class="tdNews">
+							<p style="color:purple; display:inline">[ May '20 ]</p>
+						</td>
+						<td>
+							I'll be working as a ML research intern at <a href="https://www.ecmwf.int/">ECMWF</a> as part of their summer
+							program - <a href="https://esowc.ecmwf.int/">ESoWC</a>.
+						</td>
+					</tr>
+					<tr>
+						<td class="tdNews">
+							<p style="color:purple; display:inline">[ May '20 ]</p>
+						</td>
+						<td>
+							I'll be interning at <a href="https://www.media.net/">Media.net</a> (Directi) as part of their Ad-Experience team.
+						</td>
+					</tr>
+					<tr>
+						<td class="tdNews">
+							<p style="color:purple; display:inline">[ Jan '20 ]</p>
+						</td>
+						<td>
+							I'll be working on a sponsored project with <a href="https://www.tcs.com/tcs-research">TCS Research</a> on
+							Neuro-Symbolic Modeling.
+						</td>
+					</tr>
+					<tr>
+						<td class="tdNews">
+							<p style="color:purple; display:inline">[ Jan '20 ]</p>
+						</td>
+						<td>
+							I'll be TAing the <a href="https://bits-f464.github.io/">Machine Learning Course</a> at BITS Pilani, Goa.
+						</td>
+					</tr>
+					<tr>
+						<td class="tdNews">
+							<p style="color:purple; display:inline">[ Jan '20 ]</p>
+						</td>
+						<td>
+							I'll be a mentor for this summers'
+							<a href="https://sites.google.com/view/qstp19/home#h.p_CTXtavYW-HBM">Machine Learning QSTP course</a>
+							along with <a href="https://www.linkedin.com/in/rijul-ganguly-22629b162/">Rijul</a>
+							and <a href="https://in.linkedin.com/in/souradeep-chakraborty-73a8607b">Saura</a>.
+						</td>
+					</tr>
 				</tbody></table>
+
 				<hr class="soft">
 				</div>
-
-
-
-
-
 
 
 
@@ -227,67 +255,55 @@
 <!-- WORK EXPERIENCE -->
 
 				<br><br>
-				<button type="button" class="collapsible" id="work">Work Experience</button>
-				<div class="content" style="max-height: 100%">
+				<button type="button" class="collapsible" data-toggle="collapse" data-target="#content-2" id="work">Work Experience</button>
+				<div id="content-2" class="collapse in">
 
-				<table border=0 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-						<tr>
-						<td style="padding:0px;width:100%;vertical-align:middle">
-
-							<!-- <div class="title">
-							  <span class="heading" id="work">Work Experience</span>
-							  <span class="expand">[ <a href="javascript:toggle_vis('expand_work')">+</a> ]</span>
-							</div>
-							
-							<p>&nbsp</p><p>&nbsp</p> -->
-							<div id="expand_work" style="display:inline">
-								<p>
-									<ul class="a">
-
-										<li>
-											<p style="color:purple; display:inline">[ May '20 - Sep '20 ]</p> - 
-											<a href="https://www.ecmwf.int/">ECMWF</a> - 
-											Machine Learning Research Intern.
-										</li>
-
-										<li>
-											<p style="color:purple; display:inline">[ May '20 - Jun '20 ]</p> - 
-											<a href="https://www.media.net/">Media.net (Directi)</a> - 	
-											Summer SWE Intern.	
-										</li>
-
-										<li>
-											<p style="color:purple; display:inline">[ Jan '20 - May '20 ]</p> - 
-											<a href="https://www.bits-pilani.ac.in/goa/appcair/people">APPCAIR Lab</a>
-											& 
-											<a href="https://www.tcs.com/tcs-research">TCS Research</a> - 
-											Research Intern.								
-										</li>
-
-										<li>
-											<p style="color:purple; display:inline">[ May '19 - Jul '19 ]</p> - 
-											<a href="?">Bank of Maharashtra, Head Office</a> - 
-											Summer SWE Intern.	
-										</li>
-
-										<li>
-											<p style="color:purple; display:inline">[ Feb '19 - Apr '19 ]</p> - 
-											<a href="https://www.pixxel.space/">Pixxel</a> - 
-											Machine Learning Intern.								
-										</li>
-
-									</ul>
-								</p>
+				<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+					<tr>
+						<td class="tdWork">
+							<p style="color:purple; display:inline">[ May '20 - Aug '20 ]</p>
 						</td>
-						</tr>
+						<td>
+							<a href="https://www.ecmwf.int/">ECMWF</a> - Machine Learning Research Intern.
+						</td>
+					</tr>
+					<tr>
+						<td class="tdWork">
+							<p style="color:purple; display:inline">[ May '20 - Jun '20 ]</p>
+						</td>
+						<td>
+							<a href="https://www.media.net/">Media.net (Directi)</a> - Summer SWE Intern.
+						</td>
+					</tr>
+					<tr>
+						<td class="tdWork">
+							<p style="color:purple; display:inline">[ Jan '20 - May '20 ]</p>
+						</td>
+
+						<td>
+							<a href="https://www.bits-pilani.ac.in/goa/appcair/people">APPCAIR Lab</a> &
+							<a href="https://www.tcs.com/tcs-research">TCS Research</a> - Research Intern.
+						</td>
+					</tr>
+					<tr>
+						<td class="tdWork">
+							<p style="color:purple; display:inline">[ May '19 - Jul '19 ]</p>
+						</td>
+						<td>
+							<a href="">Bank of Maharashtra, Head Office</a> - Summer SWE Intern.
+						</td>
+					</tr>
+					<tr>
+						<td class="tdWork">
+							<p style="color:purple; display:inline">[ Feb '19 - Apr '19 ]</p>
+						</td>
+						<td>
+							<a href="https://www.pixxel.space/">Pixxel</a> - Machine Learning Intern.
+						</td>
+					</tr>
+
 				</tbody></table>
 
-				<table border=0 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-					
- 
-				</tbody>
-			</table>
 			<hr class="soft">
 			</div>	
 
@@ -298,50 +314,40 @@
 <!-- ===============================================================================================================================================-->
 <!-- TEACHING -->
 
-				<br><br>
-				<button type="button" class="collapsible" id="teaching">Teaching & Mentoring</button>
-				<div class="content" style="max-height: 100%">
+			<br><br>
+			<button type="button" class="collapsible" data-toggle="collapse" data-target="#content-3" id="teaching">Teaching & Mentoring</button>
+			<div id="content-3" class="collapse in">
 
-				<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-						<tr>
-						<td style="padding:0px;width:100%;vertical-align:middle">
-
-		<!-- 					<div class="title">
-							  <span class="heading" id="teaching">Teaching & Mentoring</span>
-							  <span class="expand">[ <a href="javascript:toggle_vis('expand_teach')">+</a> ]</span>
-							</div>
-							
-							<p>&nbsp</p><p>&nbsp</p> -->
-							<div id="expand_teach" style="display:inline">
-								<p>
-									<ul class="a">
-
-										<li>
-											<p style="color:purple; display:inline">[ Spring '20 ]</p> - 
-											<a href="https://bits-f464.github.io/">BITS F464: Machine Learning</a>									
-											- Teaching Assistant (TA).
-										</li>
-
-										<li>
-											<p style="color:purple; display:inline">[ Fall '19 ]</p> - 
-											<a href="http://bits-tip.github.io/index.html">Technology Incubator Programme, BITS Pilani</a> 							
-											- Project Mentor.
-										</li>
-
-
-										<li>
-											<p style="color:purple; display:inline">[ Summer '19 ]</p> - 
-											<a href="https://sites.google.com/view/qstp19/home#h.p_CTXtavYW-HBM">Quark-QSTP: Introduction to Machine Learning</a>									
-											- Instructor.
-										</li>
-									
-									</ul>
-								</p>
-
+				<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+					<tr>
+						<td class="tdTeach">
+							<p style="color:purple; display:inline">[ Spring '20 ]</p>
 						</td>
-						</tr>
-				</tbody>
-			</table>
+						<td>
+							<a href="https://bits-f464.github.io/">BITS F464: Machine Learning</a> - Teaching Assistant (TA).
+						</td>
+					</tr>
+					<tr>
+						<td class="tdTeach">
+							<p style="color:purple; display:inline">[ Fall '19 ]</p>
+						</td>
+						<td>
+							<a href="http://bits-tip.github.io/index.html">Technology Incubator Programme, BITS Pilani</a> - Project Mentor.
+						</td>
+					</tr>
+					<tr>
+						<td class="tdTeach">
+							<p style="color:purple; display:inline">[ Summer '19 ]</p>
+						</td>
+						<td>
+							<a href="https://sites.google.com/view/qstp19/home#h.p_CTXtavYW-HBM">Quark-QSTP: Introduction to Machine Learning</a>
+							- Instructor.
+						</td>
+					</tr>
+
+				</tbody></table>
+
+
 			<hr class="soft">
 			</div>
 
@@ -351,18 +357,11 @@
 <!-- RESEARCH -->
 
 				<br><br>
-				<button type="button" class="collapsible" id="research">Research</button>
-				<div class="content" style="max-height: 100%">
+				<button type="button" class="collapsible" data-toggle="collapse" data-target="#content-4" id="research">Research</button>
+				<div id="content-4" class="collapse in">
+
 
 				<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-					<!-- 	<tr>
-						<td style="padding:20px;width:100%;vertical-align:middle" colspan="2">
-							<div class="title">
-								 <span class="heading" id="research">Research</span>
-							</div>
-						</td>
-						</tr>
- -->
 					<!-- ------------------------------------ -->
 					<!-- BONGARD -->
 					<tr>
@@ -371,11 +370,11 @@
 						</td>
 						<td style="padding:20px;width:75%;vertical-align:middle">
 							<papertitle>Developing a framework to model solutions for Bongard Problems</papertitle>
-							<br><b>Supervisor</b>: <a href="https://www.bits-pilani.ac.in/goa/ashwin/profile">Prof. Ashwin Srinivasan</a>
+							<br><b>Supervisor</b> : <a href="https://www.bits-pilani.ac.in/goa/ashwin/profile">Prof. Ashwin Srinivasan</a>
 							<br><p>
 								The <a href="https://en.wikipedia.org/wiki/Bongard_problem">Bongard problems</a> were introduced by Mikhail Moiseevich Bongard in 1967, in his classic pattern recognition book. <br><br>
 
-								We use the DeepProbLog framework to model solutions to these problems by evaluating different hypotheses and then calculating their respective likelihoods.
+								We use the DeepProbLog framework to model solutions to these problems by evaluating different hypotheses and then calculating their repective likelihoods.
 
 							 </p>
 						</td>
@@ -391,11 +390,11 @@
 						</td>
 						<td style="padding:20px;width:75%;vertical-align:middle">
 							<papertitle>Detecting schizophrenia using Electroencephalography Signals</papertitle>
-							<br><b>Supervisor</b>: <a href="https://universe.bits-pilani.ac.in/goa/amalinprince/profile/">Prof. Amalin Prince</a>
+							<br><b>Supervisor</b> : <a href="https://universe.bits-pilani.ac.in/goa/amalinprince/profile/">Prof. Amalin Prince</a>
 							<br><p>
-								Schizophrenia is a mental disorder with symptoms including hallucinations and episodes of psychosis. 
+								Schizophrenia is a mental disorder whith symptoms including hallucinations and episodes of psychosis. 
 								<br><br>
-								We develop a Deep Learning Pipeline for automated Schizophrenia detection using abnormalities in brain-wave patterns captured through EEG Data.
+								We develop a Deep Learning Pipeline for automated Schizophrenia detection using abnormalies in brain-wave patterns captured through EEG Data.
 
 							 </p>
 						</td>
@@ -411,7 +410,7 @@
 						</td>
 						<td style="padding:20px;width:75%;vertical-align:middle">
 							<papertitle>Implementing Spiking-Time Dependent Plasticity on SpineCreator </papertitle>
-							<br><b>Supervisor</b>: <a href="https://sites.google.com/site/bsenbhattacharya/">Prof. Basabdatta Sen Bhattacharya</a>
+							<br><b>Supervisor</b> : <a href="https://sites.google.com/site/bsenbhattacharya/">Prof. Basabdatta Sen Bhattacharya</a>
 							<br><a href="data/SNN_report_Aditya_Ahuja.pdf">[ Report ]</a>
 							<a href="data/SNN_poster_Aditya_Ahuja.pdf">[ Poster ]</a>
 							<br><p>
@@ -434,19 +433,10 @@
 <!-- PROJECTS -->
 
 				<br><br>
-				<button type="button" class="collapsible" id="projects">Projects</button>
-				<div class="content" style="max-height: 100%">
+				<button type="button" class="collapsible" data-toggle="collapse" data-target="#content-5" id="projects">Projects</button>
+				<div id="content-5" class="collapse in">
 
 				<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-						
-						<!-- <tr>
-						<td style="padding:20px;width:100%;vertical-align:middle" colspan="2">
-							<div class="title">
-								 <span class="heading" id="projects">Projects</span>
-							</div>
-						</td>
-						</tr> -->
-
 					<!-- ------------------------------------ -->
 					<!-- SPEECH EMOTION RECOGNITION -->
 					
@@ -502,7 +492,7 @@
 							<br><p>
 								Developed a Siamese Neural Net that performed few shot signature verification.
 								<br><br>
-								Taking a few sample signatures of a person, the model predicts whether the input 'query' signature is forged or authentic. 
+								Taking a few sample signatures of a person, the model predicted whether the input 'query' signature fas forged or authentic. 
 							 </p>
 						</td>
 					</tr>  
@@ -537,7 +527,7 @@
 							<papertitle>Image Generation using GANs</papertitle>
 							<br>[ <a href="https://github.com/adiah80/GAN-comparisions">Code</a> ]
 									[ <a href=data/GAN.html>HTML</a> ]
-							<br><p>
+							<br><br><p>
 								Developed a Generative Adversarial Network (GAN) to generate new instances of the <a href="https://www.cs.toronto.edu/~kriz/cifar.html"> CIFAR Dataset</a>. 
 							 </p>
 						</td>
@@ -568,73 +558,26 @@
 		<hr class="soft">
 		</div>
 
+
 <!-- ===============================================================================================================================================-->
 			<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				<tr>
 					<td style="padding:0px">
 						<br>
-						<p style="text-align:center;font-size:small;">
-						[ <a href="https://jonbarron.info/">Template</a> ]     
-						</p> 
+						<p style="text-align:center;">
+						[ <a href="https://jonbarron.info/" target="_blank">Template</a> ]
+						[ <a href="javascript:ToggleAll()"> Toggle All </a> ]
+						</p>
+
 					</td>
 				</tr>
 			</tbody>
 			</table>
+			</table>
 			</td>
+
+
 		</tr>
 	</table>
-
-<!-- 	<script>
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
-
-	for (i = 0; i < coll.length; i++) {
-	  coll[i].addEventListener("click", function() {
-	    this.classList.toggle("active");
-	    var content = this.nextElementSibling;
-	    if (content.style.display === "block") {
-	      content.style.display = "none";
-	    } else {
-	      content.style.display = "block";
-	    }
-	  });
-	}
-	</script> -->
-
-	<script>
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
-
-	for (i = 0; i < coll.length; i++) {
-	  coll[i].addEventListener("click", function() {
-	    this.classList.toggle("active");
-	    var content = this.nextElementSibling;
-	    if (content.style.maxHeight){
-	      content.style.maxHeight = null;
-	    } else {
-	      content.style.maxHeight = content.scrollHeight + "px";
-	    } 
-	  });
-	}
-	</script>
-<!-- 
-	<script>
-		function toggleCollapsibleSectionWithAnimation() {
-			this.classList.toggle("collapsible-active");
-			var buttonId = this.id;
-			var sectionId = buttonId.replace("button","section");
-			var content = document.getElementById(sectionId);
-	    var mHeight = window.getComputedStyle(content).maxHeight;
-			if (mHeight !== "0px"){
-			  content.style.maxHeight = "0px";
-			} else {
-			  content.style.maxHeight = "100%";
-			}
-		}
-	</script>
-
-	 -->
-
-
 </body>
 </html>
