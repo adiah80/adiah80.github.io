@@ -1,4 +1,5 @@
 /* latin-ext */
+/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
@@ -177,6 +178,17 @@ ul.a {
   padding:0;
 }
 
+<<<<<<< HEAD
+/*
+ul.a {
+  list-style-type:none;
+  margin:20px;
+  padding:0;
+}
+*/
+
+=======
+>>>>>>> 64b1f3a0d82dea680c20f113e8d032a10aae23da
 
 .title .heading { 
   /*font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
@@ -207,9 +219,15 @@ Can replace with : hoverZoomLink
 .dp {
     width: 18rem;
     height: auto;
+<<<<<<< HEAD
+    border-radius: 5px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 6rem;
+=======
     border-radius: 3px;
     /*box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);*/
     margin-bottom: 4rem;
+>>>>>>> 64b1f3a0d82dea680c20f113e8d032a10aae23da
 }
 
 .button {
@@ -268,3 +286,27 @@ Can replace with : hoverZoomLink
   background-color: #ffffff;
 }
 
+<<<<<<< HEAD
+.astext {
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  cursor: pointer;
+  text-align: center;
+  background: gray;
+}
+
+.tdNews{
+  width:70px;
+}
+
+.tdWork{
+  width:130px;
+}
+
+.tdTeach{
+  width:100px;
+}
+=======
+>>>>>>> 64b1f3a0d82dea680c20f113e8d032a10aae23da
