@@ -63,10 +63,10 @@
 
 <!-- ===============================================================================================================================================-->
 <!-- TAB-BAR  -->
-	<title>Aditya Ahuja</title>
+	<title>Aditya Ahuja | Home</title>
 	<meta name="author" content="Aditya Ahuja">
-<!--	<meta name="viewport" content="width=device-width, initial-scale=1">-->
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" type="image/jpg" href="images/pentagram.jpg">
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
@@ -77,8 +77,11 @@
 </head>
 
 
-<body class="bg_colour">
-	<table border=0 class="bg_colour" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<!--<body class="bg_colour">-->
+
+<body style="background-color:rgba(255, 255, 255, 0);">
+	<div style="background-image: url('images/Lyndon.jpg');background-repeat: no-repeat; background-attachment: fixed;background-size:cover;">
+	<table border=0 class="bg_colour" style="width:100%;max-width:900px;border:0px;border-spacing:10px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:rgba(255, 255, 255, 0.6);"><tbody>
 		<tr style="padding:0px">
 			<td style="padding:0px">
 
@@ -87,22 +90,13 @@
 <!-- NAME -->
 
 				<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-					
-					<tr><td style="padding:10px"></td></tr>
-
 
 					<tr >
 						<td colspan="2" class="header">
-							<br>
-							<p style="text-align:center">
-								<name>Aditya Ahuja</name>
-							</p>
-						</td>
-					</tr>
-
-					<tr>
-					<td colspan="2">
+						<br>
 						<p style="text-align:center">
+							<name>Aditya Ahuja</name>
+							<br>
 							[
 							<a href="#news" onclick=Expand("news")>News</a>
 							&nbsp|&nbsp
@@ -113,13 +107,14 @@
 							<a href="#research" onclick=Expand("research")>Research</a>
 							&nbsp|&nbsp
 							<a href="#projects" onclick=Expand("projects")>Projects</a>
+							&nbsp|&nbsp
+							<a href="#trivia" onclick=Expand("trivia")>Trivia</a>
 							]
 						</p>
 					</td>
 					</tr>
 				</tbody></table>
-				<hr class="soft">
-
+				<hr class="hard">
 
 <!-- ===============================================================================================================================================-->
 <!-- ABOUT -->
@@ -128,18 +123,18 @@
 
 						<td style="padding:2.5%;width:65%;vertical-align:middle">
 							<p>
-								I am a junior CS undergraduate at 
+								I am a senior CS undergraduate at
 								<a href="https://en.wikipedia.org/wiki/Birla_Institute_of_Technology_and_Science,_Pilani">BITS Pilani</a>, 
 								and an undergraduate researcher at the 
-								<a href="https://www.bits-pilani.ac.in/goa/appcair/people">APPCAIR Lab, BITS Goa</a> (collaborating with 
+								<a href="https://www.bits-pilani.ac.in/appcair/">APPCAIR Lab, BITS Goa</a> (collaborating with
 								<a href="https://www.tcs.com/tcs-research"> TCS Research</a>)
-								where I am currently working on Neuro Symbolic Modeling under the supervision of
+								where I am working on Neuro Symbolic Modeling under the supervision of
 								<a href="https://scholar.google.com.au/citations?user=zpNTeogAAAAJ&hl=en"> Prof. Ashwin Srinivasan</a>.
 								<br><br>
 
-								I am currently a research intern at <a href="https://www.ecmwf.int/">ECMWF</a>, working with
-								<a href="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/peter-dueben">Prof. Peter Dueben</a>,
-								and building Deep Learning models to detect anomalies in metrics for their data services. I also spent an
+								Currently I am a research intern at <a href="https://www.ecmwf.int/">ECMWF</a>, working with
+								<a href="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/peter-dueben">Dr. Peter Dueben</a>,
+								and building Deep models to detect anomalies in metrics for their data services. I also spent an
 								awesome summer at <a href="https://www.media.net/">Media.net</a>, working with the Ad-Experience team on malware
 								detection in web advertisements. <br><br>
 
@@ -150,7 +145,7 @@
 								
 								I've also participated in a lot of algorithmic programming competitions on
 								<a href="https://codeforces.com/profile/adiah">online judges</a>,
-								writing (efficient) code to solve resource-constrained algorithmic challenges.
+								writing 	efficient code to solve resource-constrained algorithmic challenges.
 							</p>
 							<p style="text-align:center">
 								<a href="mailto:ahuja.aditya1452@gmail.com" target="blank">Email</a>
@@ -161,7 +156,9 @@
 								&nbsp|&nbsp
 								<a href="https://github.com/adiah80" target="blank">Github</a>
 								&nbsp|&nbsp
-								<a href="https://www.linkedin.com/in/aditya-ahuja-37b57114b/" target="blank">LinkedIn</a>
+								<a href="https://www.linkedin.com/in/adiah80" target="blank">LinkedIn</a>
+								&nbsp|&nbsp
+								<a href="https://twitter.com/adiah80" target="blank">Twitter</a>
 								&nbsp|&nbsp
 								<a href="https://www.stopstalk.com/user/profile/adi_ahuja" target="blank">StopStalk</a>
 								&nbsp|&nbsp
@@ -175,7 +172,7 @@
 					</tr>
 
 				</tbody></table>
-				<hr class="soft">
+<!--				<hr class="soft">-->
 
 
 
@@ -189,16 +186,24 @@
 
 				<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+					<!-- Google Summer School -->
+					<tr>
+						<td class="tdNews"><p style="color:purple; display:inline">[ Aug '20 ]</p></td>
+						<td>
+							I have been selected for the
+							<a href="https://sites.google.com/view/aisummerschool2020/home">Google Research AI Summer School</a>
+							which I will be attending from Aug 20-23!
+						</td>
+					</tr>
 
 					<tr>
 						<td class="tdNews">
 							<p style="color:purple; display:inline">[ Jul '20 ]</p>
 						</td>
 						<td>
-							Check out the 
-							<a href="https://sites.google.com/view/aisymposium2020">AI Summer Symposium</a> that is being organised by 
-							<a href="https://www.saidl.in/">SAiDL</a>! (in association with 
-							<a href="https://www.bits-pilani.ac.in/Goa/appcair/home">APPCAIR</a>).
+							Co-organised the
+							<a href="https://sites.google.com/view/aisymposium2020">Summer Symposium on AI Research</a>
+							with 3000+ registrations, inviting top AI researchers as speakers.
 						</td>
 					</tr>
 
@@ -270,7 +275,8 @@
 					</tr>
 				</tbody></table>
 
-				<hr class="soft">
+<!--				<hr class="soft">-->
+				</div>
 				</div>
 
 
@@ -285,7 +291,17 @@
 				<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 					<tr>
 						<td class="tdWork">
-							<p style="color:purple; display:inline">[ May '20 - Aug '20 ]</p>
+							<p style="color:purple; display:inline">[ Jan '20 - Current ]</p>
+						</td>
+
+						<td>
+							<a href="https://www.bits-pilani.ac.in/appcair/">APPCAIR Lab</a> &
+							<a href="https://www.tcs.com/tcs-research">TCS Research</a> - Undergratuate Researcher.
+						</td>
+					</tr>
+					<tr>
+						<td class="tdWork">
+							<p style="color:purple; display:inline">[ May '20 - Sep '20 ]</p>
 						</td>
 						<td>
 							<a href="https://www.ecmwf.int/">ECMWF</a> - Machine Learning Research Intern.
@@ -297,16 +313,6 @@
 						</td>
 						<td>
 							<a href="https://www.media.net/">Media.net (Directi)</a> - Summer SWE Intern.
-						</td>
-					</tr>
-					<tr>
-						<td class="tdWork">
-							<p style="color:purple; display:inline">[ Jan '20 - May '20 ]</p>
-						</td>
-
-						<td>
-							<a href="https://www.bits-pilani.ac.in/goa/appcair/people">APPCAIR Lab</a> &
-							<a href="https://www.tcs.com/tcs-research">TCS Research</a> - Research Intern.
 						</td>
 					</tr>
 					<tr>
@@ -328,7 +334,7 @@
 
 				</tbody></table>
 
-			<hr class="soft">
+<!--			<hr class="soft">-->
 			</div>	
 
 
@@ -343,6 +349,14 @@
 			<div id="content-3" class="collapse in">
 
 				<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+					<tr>
+						<td class="tdTeach">
+							<p style="color:purple; display:inline">[ Fall '20 ]</p>
+						</td>
+						<td>
+							<a href="https://bits-f464.github.io/">BITS F464: Machine Learning</a> - Teaching Assistant (TA).
+						</td>
+					</tr>
 					<tr>
 						<td class="tdTeach">
 							<p style="color:purple; display:inline">[ Summer '20 ]</p>
@@ -380,7 +394,7 @@
 				</tbody></table>
 
 
-			<hr class="soft">
+<!--			<hr class="soft">-->
 			</div>
 
 
@@ -394,6 +408,39 @@
 
 
 				<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+					<!-- ------------------------------------ -->
+					<!-- CLEVR -->
+					<tr>
+						<td style="padding:20px;width:25%;vertical-align:middle">
+							<img src='images/clevr.jpg' border=1 height=120 width=170>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Compositional Reasoning for object detection via Transformers</papertitle>
+							<br><b>Supervisors</b> : <a href="https://www.bits-pilani.ac.in/goa/ashwin/profile">Prof. Ashwin Srinivasan</a>,
+							<a href="https://scholar.google.co.in/citations?hl=en&user=LeHCh80AAAAJ&view_op=list_works">Dr. Shirish Karande</a>
+							<br><p>
+
+						</p>
+						</td>
+					</tr>
+					<tr><td colspan=2><hr class="soft"></td></tr>
+
+					<!-- ------------------------------------ -->
+					<!-- ESOWC -->
+					<tr>
+						<td style="padding:20px;width:25%;vertical-align:middle">
+							<img src='images/ESoWC.png' border=1 height=120 width=170>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Anomaly Detection in Streaming Time Series Data</papertitle>
+							<br><b>Supervisor</b> : <a href="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/peter-dueben">Dr. Peter Dueben</a>
+							<br><p>
+
+						</p>
+						</td>
+					</tr>
+					<tr><td colspan=2><hr class="soft"></td></tr>
+
 					<!-- ------------------------------------ -->
 					<!-- BONGARD -->
 					<tr>
@@ -454,7 +501,7 @@
 					</tr>  
 				</tbody>
 			</table>
-			<hr class="soft">
+<!--			<hr class="soft">-->
 			</div>
 
 
@@ -564,7 +611,6 @@
 							 </p>
 						</td>
 					</tr>
-
 					<tr><td colspan=2><hr class="soft"></td></tr>
 
 					<!-- ------------------------------------ -->
@@ -582,12 +628,68 @@
 								<br><br>
 								Visualized the obtained embeddings on a 2D graph using Principal Component Analysis (PCA), and checked the obtained embeddings for semantic coherence.
 							 </p>
-							 
 						</td>
 					</tr>
+					<tr><td colspan=2><hr class="soft"></td></tr>
+
+					<!-- ------------------------------------ -->
+					<!-- GAME OF LIFE -->
+					<tr>
+						<td style="padding:20px;width:25%;vertical-align:middle">
+						<img src='images/GOL.gif' border=1 height=120 width=170>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Conway's Game of Life</papertitle>
+							<br>[ <a href="https://github.com/adiah80/Game-Of-Life">Code</a> ]
+							<br><br><p>
+							A modular implementations of <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>
+							in Python with common patterns like Still lifes, Oscillators, and Spaceships.
+						</p>
+						</td>
+					</tr>
+
+					<tr><td colspan=2><hr class="soft"></td></tr>
+
+
 				</tbody>
 			</table>
-		<hr class="soft">
+<!--		<hr class="soft">-->
+		</div>
+
+
+<!-- ===============================================================================================================================================-->
+<!-- TRIVIA -->
+
+		<br><br>
+		<button type="button" class="collapsible" data-toggle="collapse" data-target="#content-7" id="trivia">Trivia</button>
+		<div id="content-7" class="collapse in">
+
+			<table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+			<tr>
+				<td style="padding:0px;width:100%;vertical-align:middle">
+					<div id="expand_trivia" style="display:inline">
+						<p><ul class="a">
+
+						<li>
+							I come from a family with a military background, and have lived in a lot of diverse places -
+							snowy mountains (<a href="https://en.wikipedia.org/wiki/Leh">Leh</a>),
+							the country-side (<a href="https://en.wikipedia.org/wiki/Jorhat">Jorhat</a>, <a href="https://en.wikipedia.org/wiki/Valsad">Valsad</a>),
+							some big cities (<a href="https://en.wikipedia.org/wiki/Mumbai">Mumbai</a>, <a href="https://en.wikipedia.org/wiki/Pune">Pune</a>) and
+							by the Sea (<a href="https://en.wikipedia.org/wiki/Vasco_da_Gama,_Goa">Vasco Da Gama</a>).
+						</li>
+
+						<li>
+							Throughout my childhood, I have been to 8 different schools, including 3 military ones and a catholic school.
+						</li>
+
+					</ul></p>
+					</div>
+
+				</td>
+			</tr>
+			</tbody>
+			</table>
+<!--			<hr class="soft">-->
 		</div>
 
 
@@ -597,10 +699,11 @@
 					<td style="padding:0px">
 						<br>
 						<p style="text-align:center;">
-						[ <a href="https://jonbarron.info/" target="_blank">Template</a> ]
 						[ <a href="javascript:ToggleAll()"> Toggle All </a> ]
+						[ <a href="https://jonbarron.info/" target="_blank">Template</a> ]
+						<br>
+						Image from Barry Lyndon (1975)
 						</p>
-
 					</td>
 				</tr>
 			</tbody>

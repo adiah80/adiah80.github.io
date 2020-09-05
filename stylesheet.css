@@ -135,7 +135,12 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-
+hr.hard {
+  border: 0;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+}
 
 hr.soft {
     border: 0;
@@ -173,9 +178,10 @@ hr.soft {
 
 
 ul.a {
-  list-style-type:none;
-  margin:20px;
-  padding:0;
+  list-style-type:"-  ";
+  margin-left:0px;
+  margin-bottom:20px;
+  /*padding:10px;*/
 }
 
 <<<<<<< HEAD
@@ -237,6 +243,7 @@ Can replace with : hoverZoomLink
 
 .collapsible {
   background-color: #f0f0f0;
+  /*background-color: #ffffff;*/
   color: #000000;
   cursor: pointer;
   padding: 2px 20px;
@@ -258,7 +265,10 @@ Can replace with : hoverZoomLink
 }
 
 .collapsible:hover {
-  background-color: #eaeaea;
+  /*background-color: #eaeaea;*/
+  background-color: #e0e0e0;
+  border-color:#aaaaaa;
+  border-width: 20px;
   color: #000000;
   transition-duration: 0.01s;
 }
@@ -302,7 +312,7 @@ Can replace with : hoverZoomLink
 }
 
 .tdWork{
-  width:130px;
+  width:130px;bg
 }
 
 .tdTeach{
