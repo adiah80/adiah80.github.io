@@ -242,7 +242,7 @@ Can replace with : hoverZoomLink
 
 
 .collapsible {
-  background-color: #f0f0f0;
+  background-color: #d0d0d0;
   /*background-color: #ffffff;*/
   color: #000000;
   cursor: pointer;
@@ -266,7 +266,7 @@ Can replace with : hoverZoomLink
 
 .collapsible:hover {
   /*background-color: #eaeaea;*/
-  background-color: #e0e0e0;
+  background-color: #c0c0c0;
   border-color:#aaaaaa;
   border-width: 20px;
   color: #000000;
