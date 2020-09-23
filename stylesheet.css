@@ -1,5 +1,4 @@
 /* latin-ext */
-/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
@@ -23,15 +22,7 @@
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */<button class="collapsible" id="collapsible-button-0" onclick="toggleCollapsibleSectionWithAnimation.call(this)"><b>Model</b> (show/hide)</button>
-  <div class="collapsible-content" id="collapsible-section-0">
-
-  <h1>
-  content
-  </h1>
-
-
-  </div>
+/* latin */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
@@ -70,7 +61,9 @@
   font-weight: 700;
   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+} 
+
+/* ================================================================================================================================================ */
 
 a {
   color: #1772d0;
@@ -89,8 +82,9 @@ th,
 tr,
 p,
 a {
-  /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
-  /*font-family: 'Georgia', Verdana, Helvetica, sans-serif;*/
+  /* font-family: 'Lato', Verdana, Helvetica, sans-serif; */
+  /* font-family: 'Georgia', Verdana, Helvetica, sans-serif; */
+  font-family: 'Quattrocento', Verdana, sans-serif;
   font-size: 14px
 }
 
@@ -105,9 +99,10 @@ heading {
 }
 
 papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700
+  /* font-family: 'Lato', Verdana, Helvetica, sans-serif; */
+  font-family: 'Quattrocento', Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: bold
 }
 
 .one {
@@ -135,6 +130,8 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+/* ================================================================================================================================================ */
+
 hr.hard {
   border: 0;
   height: 1px;
@@ -160,7 +157,7 @@ hr.soft {
 #moreprojects {
     display: none;
 }
-
+/* 
 .showmore {
     border: 1px solid #CCC;
     padding: 10px;
@@ -174,18 +171,17 @@ hr.soft {
 }
 .showmore:hover {
     color: #333;
-}
+} 
+*/
 
 
+/*
 ul.a {
   list-style-type:"-  ";
   margin-left:0px;
   margin-bottom:20px;
-  /*padding:10px;*/
 }
 
-<<<<<<< HEAD
-/*
 ul.a {
   list-style-type:none;
   margin:20px;
@@ -193,16 +189,14 @@ ul.a {
 }
 */
 
-=======
->>>>>>> 64b1f3a0d82dea680c20f113e8d032a10aae23da
 
 .title .heading { 
-  /*font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+  /* font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; */
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 30px;
   font-variant-caps: small-caps;
   float:left 
-  /*text-decoration: underline;*/
+  text-decoration: underline;
 
 }
 
@@ -212,7 +206,8 @@ ul.a {
 
 name {
   /*font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  /* font-family: 'Lato', Verdana, Helvetica, sans-serif; */
+  font-family: 'Quattrocento', Verdana, sans-serif;
   font-size: 50px;
   font-variant-caps: small-caps;  
 }
@@ -225,38 +220,42 @@ Can replace with : hoverZoomLink
 .dp {
     width: 18rem;
     height: auto;
-<<<<<<< HEAD
     border-radius: 5px;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 6rem;
-=======
-    border-radius: 3px;
-    /*box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);*/
     margin-bottom: 4rem;
->>>>>>> 64b1f3a0d82dea680c20f113e8d032a10aae23da
 }
 
 .button {
   /*transition-duration: 7s;*/
 }
 
-
 .collapsible {
-  background-color: #d0d0d0;
+  background-color: #f6f6f6;
   /*background-color: #ffffff;*/
   color: #000000;
   cursor: pointer;
   padding: 2px 20px;
   border-radius: 5px;
   width: 100%;
-  border: none;
+  border: 1;
+  border-width: 1px;
   text-align: left;
   outline: none;
 
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  /* font-family: 'Quattrocento', Verdana, sans-serif; */
   font-size: 30px;
   font-variant-caps: small-caps;
   /*border: 1px solid #000000;*/
+}
+
+.collapsible:hover {
+  /*background-color: #eaeaea;*/
+  background-color: #e6e6e6;
+  border-color:#aaaaaa;
+  border-width: 1px;
+  color: #000000;
+  transition-duration: 0.01s;
 }
 
 .active {
@@ -264,39 +263,33 @@ Can replace with : hoverZoomLink
   color: #000000;
 }
 
-.collapsible:hover {
-  /*background-color: #eaeaea;*/
-  background-color: #c0c0c0;
-  border-color:#aaaaaa;
-  border-width: 20px;
-  color: #000000;
-  transition-duration: 0.01s;
-}
 
+
+/* 
 .content {
   padding: 0 20px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-}
+} 
+*/
 
 .header {
-  /*background-color: #111111;*/
+  /* background-color: #111111; */
   /*padding: 0px 0px;*/
   /*border-spacing: 0px;*/
-  /*padding-bottom: 1em;*/
+  /* padding-bottom: 1em; */
   /*white-space:nowrap;*/
-  /*height : 200px;*/
-  /*border-radius: 5px;*/
+  /* height : 200px; */
+  /* border-radius: 5px; */
   /*width: 90%;*/
-
+  
 }
 
 .bg_colour {
   background-color: #ffffff;
 }
 
-<<<<<<< HEAD
 .astext {
   background:none;
   border:none;
@@ -308,15 +301,13 @@ Can replace with : hoverZoomLink
 }
 
 .tdNews{
-  width:70px;
+  width:86px;
 }
 
 .tdWork{
-  width:130px;bg
+  width:152px;
 }
 
 .tdTeach{
-  width:100px;
+  width:120px;
 }
-=======
->>>>>>> 64b1f3a0d82dea680c20f113e8d032a10aae23da
