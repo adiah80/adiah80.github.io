@@ -2,6 +2,7 @@
 
 <!-- js script to toggle section visibility. -->
 <script type="text/javascript">
+	
 	 function toggle_vis(id) {
 			 var e = document.getElementById(id);
 			 if (e.style.display == 'none')
@@ -11,6 +12,7 @@
 	 }
 
 	 let coll = document.getElementsByClassName("collapsible");
+	//  console.log(coll)
 
 	 function isOpen(node){
 	 	// console.log(node.getAttribute('aria-expanded'));
@@ -20,18 +22,21 @@
 	 function ToggleAll(){
 		 let totalOpen = 0;
 		 for(let i=0; i<coll.length; i++){
+			 if(coll[i].id == 'demo') continue
 			 if(eval(isOpen(coll[i]))) totalOpen++;
 		 }
-		 console.log(totalOpen);
+		//  console.log(totalOpen);
 
 		 if(totalOpen !== 0){
 			 for(let i=0; i<coll.length; i++){
-				 if(eval(isOpen(coll[i]))) coll[i].click();
+				if(coll[i].id == 'demo') continue
+				if(eval(isOpen(coll[i]))) coll[i].click();
 			 }
 		 }
 		 else{
 			 for(let i=0; i<coll.length; i++){
-				 coll[i].click();
+				if(coll[i].id == 'demo') continue
+				coll[i].click();
 			 }
 		 }
 	 }
@@ -39,7 +44,7 @@
 	 function Expand(nodeID){
 		 let node = document.getElementById(nodeID);
 		 if(!eval(isOpen(node))){
-		 	console.log(node);
+		 	// console.log(node);
 		 	node.click();
 		 }
 	 }
@@ -104,8 +109,8 @@
 								<p style="text-align:center">
 									<name>Aditya Ahuja</name>
 									<br>
-									[
-									<a href="#news" onclick=Expand("news")>News</a>
+									<!-- [ -->
+									<a href="#updates" onclick=Expand("updates")>Updates</a>
 									&nbsp|&nbsp
 									<a href="#teaching" onclick=Expand("teaching")>Teaching</a>
 									&nbsp|&nbsp
@@ -114,7 +119,7 @@
 									<a href="#research" onclick=Expand("research")>Research</a>
 									&nbsp|&nbsp
 									<a href="#projects" onclick=Expand("projects")>Projects</a>
-									]
+									<!-- ] -->
 								</p>
 							</td>
 						</tr>
@@ -138,14 +143,19 @@
 								and an undergraduate researcher at the 
 								<a href="https://www.bits-pilani.ac.in/appcair/">APPCAIR Lab, BITS Goa</a> (collaborating with
 								<a href="https://www.tcs.com/tcs-research"> TCS Research</a>)
-								where I am working on Neuro Symbolic Modeling under the supervision of
+								where I am working on Visual Reasoning under the supervision of
 								<a href="https://scholar.google.com.au/citations?user=zpNTeogAAAAJ&hl=en"> Prof. Ashwin Srinivasan</a>.
 								<br><br>
 
-								Currently I am a research intern at <a href="https://www.ecmwf.int/">ECMWF</a>, working with
+								I recently started working at UIUC's 
+								<a href="http://vision.ai.illinois.edu/">Computer Vision and Robotics Lab (CVRL)</a> under the supervision of 
+								<a href="http://vision.ai.illinois.edu/ahuja_bio.htm">Prof. Narendra Ahuja</a>.
+								<br><br>
+
+								Before that, I spent an awesome summer as a research intern at <a href="https://www.ecmwf.int/">ECMWF</a>, working with
 								<a href="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/peter-dueben">Dr. Peter Dueben</a>,
-								and building Deep models to detect anomalies in metrics for their data services. I also spent an
-								awesome summer at <a href="https://www.media.net/">Media.net</a>, working with the Ad-Experience team on malware
+								and building Deep models to detect anomalies in metrics for their data services. I also spent a
+								summer at <a href="https://www.media.net/">Media.net</a>, working with the Ad-Experience team on malware
 								detection in web advertisements. <br><br>
 
 								I am also the president of <a href="https://www.saidl.in/home">Society for Artificial Intelligence and
@@ -184,17 +194,44 @@
 				</tbody></table>
 				<!-- <hr class="hard"> -->
 
+				<p align="center" style="color:purple;">	
+					Check out the <u><a href="#demo" onclick=Expand("demo") style="color:purple;">CATER Demo</a></u>!
+				</p>
+
 <!-- ===============================================================================================================================================-->
-<!-- NEWS -->
+<!-- UPDATES -->
 
 				<br><br>	
-				<button type="button" class="collapsible" data-toggle="collapse" data-target="#content-1" id="news">News</button>
+				<button type="button" class="collapsible" data-toggle="collapse" data-target="#content-1" id="updates">Updates</button>
 				<div id="content-1" class="collapse in">
 				<hr class="hard">
 
 				<table border=0 class="bg_colour" style="padding-left:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-					
+					<!-- UIUC -->
+					<tr>
+						<td class="tdNews"><p style="color:purple; display:inline">[ Nov '20 ]</p></td>
+						<td>
+							I'll be working as a research intern at  
+							<a href="http://vision.ai.illinois.edu/">Computer Vision and Robotics lab (CVRL), UIUC</a> mentored by 
+							<a href="http://vision.ai.illinois.edu/ahuja_bio.htm">Prof. Narendra Ahuja</a>!
+						</td>
+					</tr>
+
+
+					<!-- ESoWC Final presentation. -->
+					<tr>
+						<td class="tdNews"><p style="color:purple; display:inline">[ Nov '20 ]</p></td>
+						<td>
+							Check out me and 
+							<a href="https://adithya-mn.github.io">Adithya</a> talking about our work at
+							<a href="https://www.ecmwf.int/">ECMWF</a>.
+							[<a href="https://www.youtube.com/watch?v=oUZx28shIWk">Video</a>]
+						</td>
+					</tr>
+
+
+					<!-- Media.net PPO -->
 					<tr>
 						<td class="tdNews"><p style="color:purple; display:inline">[ Sep '20 ]</p></td>
 						<td>
@@ -237,9 +274,9 @@
 							<p style="color:purple; display:inline">[ May '20 ]</p>
 						</td>
 						<td>
-							I'll be mentoring a
-							<a href="https://github.com/SforAiDl/SAiDL-Season-of-Code#5-twitter-feed-distillation">summer project</a> with
-							<a href="https://ajaysub110.github.io/">Ajay Subramian</a> for the
+							Me and 
+							<a href="https://ajaysub110.github.io/">Ajay Subramian</a> are mentoring a 
+							<a href="https://github.com/SforAiDl/SAiDL-Season-of-Code#5-twitter-feed-distillation">summer project</a> for the 
 							<a href="https://github.com/SforAiDl/SAiDL-Season-of-Code">SAiDL-Season-of-Code</a>.
 						</td>
 					</tr>
@@ -248,8 +285,8 @@
 							<p style="color:purple; display:inline">[ May '20 ]</p>
 						</td>
 						<td>
-							I'll be working as a ML research intern at <a href="https://www.ecmwf.int/">ECMWF</a> as part of their summer
-							program - <a href="https://esowc.ecmwf.int/">ESoWC</a>.
+							Excited to start my research internship at <a href="https://www.ecmwf.int/">ECMWF</a> as part of their open source summer
+							program - <a href="https://esowc.ecmwf.int/">ESoWC</a>!
 						</td>
 					</tr>
 					<tr>
@@ -257,7 +294,7 @@
 							<p style="color:purple; display:inline">[ May '20 ]</p>
 						</td>
 						<td>
-							I'll be interning at <a href="https://www.media.net/">Media.net</a> (Directi) as part of their Ad-Experience team.
+							I'll be interning at <a href="https://www.media.net/">Media.net</a> (Directi) as part of their Ad-Experience team over the summer.
 						</td>
 					</tr>
 					<tr>
@@ -265,8 +302,10 @@
 							<p style="color:purple; display:inline">[ Jan '20 ]</p>
 						</td>
 						<td>
-							I'll be working on a sponsored project with <a href="https://www.tcs.com/tcs-research">TCS Research</a> on
-							Neuro-Symbolic Modeling.
+							I'll be working with 
+							<a href="https://www.bits-pilani.ac.in/appcair/">APPCAIR</a> and 
+							<a href="https://www.tcs.com/tcs-research">TCS Research</a> on
+							Visual Reasoning and Neuro-Symbolic modelling.
 						</td>
 					</tr>
 					<tr>
@@ -305,6 +344,15 @@
 				<hr class="hard">
 
 				<table border=0 class="bg_colour" style="padding-left:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+					<tr>
+						<td class="tdWork">
+							<p style="color:purple; display:inline">[ Nov '20 - Current ]</p>
+						</td>
+
+						<td>
+							<a href="https://www.bits-pilani.ac.in/appcair/">Computer Vision & Robotics Lab (CVRL), UIUC</a> - Research Intern.
+						</td>
+					</tr>
 					<tr>
 						<td class="tdWork">
 							<p style="color:purple; display:inline">[ Jan '20 - Current ]</p>
@@ -425,19 +473,49 @@
 					<!-- ------------------------------------ -->
 					<!-- CLEVR -->
 					<tr>
-						<td style="padding:20px;width:30%;vertical-align:middle">
-							<img src='images/clevr.jpg' border=1 height=160 width=250>
+						<td style="padding:20px;padding-bottom:0px;width:30%;vertical-align:middle">
+							<img src='images/CATER.gif' border=1 width=250>
 						</td>
 						<td style="padding:20px;width:75%;vertical-align:middle">
 							<papertitle>Compositional Reasoning and Visual Understanding on Videos</papertitle>
 							<br><b>Supervisors</b> : <a href="https://scholar.google.com.au/citations?user=zpNTeogAAAAJ&hl=en">Prof. Ashwin Srinivasan</a>,
 							<a href="https://scholar.google.co.in/citations?hl=en&user=LeHCh80AAAAJ&view_op=list_works">Dr Shirish Karande</a>
-							<br><br>
+							<br><i> In Progress. </i>
+							<br>
 							<p>
-								<i> In Progress. <i> 
+								<br> We explore compositional reasoning on the CATER dataset by learning action embeddings and using object centric representations.
 							</p>
 						</td>
 					</tr>
+					<tr>
+						<td colspan=2>
+						<center>
+						<button type="button" class="collapsible" data-toggle="collapse" data-target="#CATER_Demos" 
+						id="demo"  style="font-size:20px;">Toggle Demo</button>
+						</center>
+						<div id="CATER_Demos" class="collapse in"  style="background-color: #dddddd;">
+							<hr class="hard">
+							<table border=0">
+							  <tr>
+								<td><img src="data/tcs2/Single_0_fast.gif" width=100%></td>
+								<td><img src="data/tcs2/Single_1_fast.gif" width=100%></td>
+							  </tr>
+							  <tr>
+								  <td align=center><p width: 20%;>[ <a href="data/tcs2/Single_0_fast.gif" target=blank>Full Size</a> ]</p></td>
+								  <td align=center><p width: 20%;>[ <a href="data/tcs2/Single_1_fast.gif" target=blank>Full Size</a> ]</p></td>
+							  </tr>
+							  <tr>
+								  <td colspan=2>
+									  <p align=center>NOTE: The above results are preliminary, and are for actions involving only a single object.</p> 
+								  </td>
+							  </tr>
+							</table>
+							<hr class="hard">
+						</div>
+						<br>
+						</td>
+					</tr>
+					
 					<tr><td colspan=2><hr class="soft"></td></tr>
 
 					<!-- ------------------------------------ -->
@@ -449,13 +527,22 @@
 						<td style="padding:20px;width:75%;vertical-align:middle">
 							<papertitle>Anomaly Detection in Streaming Time Series Data</papertitle>
 							<br><b>Supervisor</b> : <a href="https://www.ecmwf.int/en/about/who-we-are/staff-profiles/peter-dueben">Dr Peter Dueben</a>
-							<br><a href="data/ESoWC_MidTerm.pdf">[ Mid-Term Report ]</a>
+							<br>[ 
+							<a href=https://github.com/esowc/BlackSwan>Project</a> |
+							<a href=data/esowc/ESoWC_EndTerm.pdf>Presentation</a> |
+							<a href=data/esowc/Demo_Terminal.mp4>Terminal Demo</a> |
+							<a href=data/esowc/Demo_ForecastX.mp4>Method Demo 1</a> |
+							<a href=data/esowc/Demo_LSTM-DAGMM.mp4>Method Demo 2</a>
+							]
 							<br><br>
 							<p>
-								<a href="https://www.ecmwf.int/">ECMWF</a> acts a data vendor to several clients, providing
+								<a href="https://www.ecmwf.int/">ECMWF</a> (Europe's largest meteorological research institute) acts a 
+								data vendor to several clients, providing
 								massive amounts of meteorological data to them. We work on building intelligent Anomaly Detection
 								systems capable of monitoring the log files produced by these services for sudden disruptions
 								and failures.
+								<br><br>
+								This work was supported by a grant of £5,000 from ECMWF.
 
 							</p>
 						</td>
@@ -551,7 +638,8 @@
 						</td>
 						<td style="padding:20px;width:75%;vertical-align:middle">
 							<papertitle>BlackSwan - Realtime Streaming Anomaly Detection on Time Series</papertitle>
-							<br>[ <a href=https://github.com/esowc/BlackSwan>Code</a> ]
+							<br> [ <a href=https://github.com/esowc/BlackSwan>Project</a> ]
+								 [ <a href=data/esowc/ESoWC_EndTerm.pdf>Presentation</a> ]
 							<br><br>
 							<p>
 								Developed a pipeline for Deep Time Series Anomaly Detection on Server Log files.
@@ -576,7 +664,7 @@
 						<td style="padding:20px;width:75%;vertical-align:middle">
 							<papertitle>Emotion Recognition from Audio Signals</papertitle>
 							<br>[ <a href=https://github.com/adiah80/Speech-Emotion-Recognition>Code</a> ]
-									[ <a href=data/Emotion_Detection.html>HTML</a> ]
+								[ <a href=data/Emotion_Detection.html>HTML</a> ]
 							<br><br>
 							<p>
 								Developed a Deep Learning pipeline for Emotion recognition and classification using speech
@@ -598,7 +686,7 @@
 						<td style="padding:20px;width:75%;vertical-align:middle">
 							<papertitle>Memotion Sentiment Analysis</papertitle>
 							<br>[ <a href="https://github.com/adiah80/Memotion-Sentiment-Analysis">Code</a> ]
-									[ <a href=data/Meme-Preprocessing.html>Preprocessing</a>, 
+									[ <a href=data/Meme-Preprocessing.html>Preprocessing</a> &
 									<a href=data/Meme-Fusion-Model.html>Model</a> ]
 							<br><br>
 							<p>
@@ -608,6 +696,34 @@
 						</td>
 					</tr>  
 
+					<tr><td colspan=2><hr class="soft"></td></tr>
+
+					<!-- ------------------------------------ -->
+					<!-- GAME OF LIFE -->
+					<tr>
+						<td style="padding:20px;width:30%;vertical-align:middle">
+						<img src='images/GOL.gif' border=1 height=160 width=250>
+						</td>
+						<td style="padding:20px;width:75%;vertical-align:middle">
+							<papertitle>Conway's Game of Life</papertitle>
+							<br>[ <a href="https://github.com/adiah80/Game-Of-Life">Code</a> ]
+							<br> Demos: 
+								<a href="data/game_of_life/1_still_life.gif">Still Life</a>, 
+								<a href="data/game_of_life/2_oscillators.gif">Oscillators</a>,
+								<a href="data/game_of_life/3_acorn_spread.gif">Acorn Spread</a>,
+								<a href="data/game_of_life/4_engine_spread.gif">Engine Spread</a>,
+								<a href="data/game_of_life/5_guns.gif">Guns</a>,
+								<a href="data/game_of_life/6_pulsars.gif">Pulsars</a>,
+								<a href="data/game_of_life/7_ships_simple.gif">Ships Simple</a>,
+								<a href="data/game_of_life/8_ships_collision.gif">Ships Collision</a>,
+								<a href="data/game_of_life/9_ships_destroyed.gif">Ships Destroyed</a>.
+
+							<br><br><p>
+							A modular implementations of <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>
+							in Python with common patterns like Still lifes, Oscillators, and Spaceships.
+						</p>
+						</td>
+					</tr>
 					<tr><td colspan=2><hr class="soft"></td></tr>
 
 					<!-- ------------------------------------ -->
@@ -687,23 +803,7 @@
 							</p>
 						</td>
 					</tr>
-					<tr><td colspan=2><hr class="soft"></td></tr>
-
-					<!-- ------------------------------------ -->
-					<!-- GAME OF LIFE -->
-					<tr>
-						<td style="padding:20px;width:30%;vertical-align:middle">
-						<img src='images/GOL.gif' border=1 height=160 width=250>
-						</td>
-						<td style="padding:20px;width:75%;vertical-align:middle">
-							<papertitle>Conway's Game of Life</papertitle>
-							<br>[ <a href="https://github.com/adiah80/Game-Of-Life">Code</a> ]
-							<br><br><p>
-							A modular implementations of <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>
-							in Python with common patterns like Still lifes, Oscillators, and Spaceships.
-						</p>
-						</td>
-					</tr>
+					
 
 				</tbody>
 			</table>
@@ -730,4 +830,12 @@
 	</table>
 
 </body>
+
+
+<script> 
+	if(top.location.href.slice(-4) != 'demo'){
+		console.log(top.location.href.slice(-4))
+		document.getElementsByClassName("collapsible")['demo'].click() 
+	}
+</script>
 </html>
