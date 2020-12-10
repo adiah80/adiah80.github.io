@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+
+<!-- js script to toggle section visibility. -->
+<script type="text/javascript">
+	
+	 function toggle_vis(id) {
+			 var e = document.getElementById(id);
+			 if (e.style.display == 'none')
+					 e.style.display = 'inline';
+			 else
+					 e.style.display = 'none';
+	 }
+
+	 let coll = document.getElementsByClassName("collapsible");
+	//  console.log(coll)
+
+	 function isOpen(node){
+	 	// console.log(node.getAttribute('aria-expanded'));
+	 	return (node.getAttribute('aria-expanded') === null) || node.getAttribute('aria-expanded');
+	 }
+
+	 function ToggleAll(){
+		 let totalOpen = 0;
+		 for(let i=0; i<coll.length; i++){
+			 if(coll[i].id == 'demo') continue
+			 if(eval(isOpen(coll[i]))) totalOpen++;
+		 }
+		//  console.log(totalOpen);
+
+		 if(totalOpen !== 0){
+			 for(let i=0; i<coll.length; i++){
+				if(coll[i].id == 'demo') continue
+				if(eval(isOpen(coll[i]))) coll[i].click();
+			 }
+		 }
+		 else{
+			 for(let i=0; i<coll.length; i++){
+				if(coll[i].id == 'demo') continue
+				coll[i].click();
+			 }
+		 }
+	 }
+
+	 function Expand(nodeID){
+		 let node = document.getElementById(nodeID);
+		 if(!eval(isOpen(node))){
+		 	// console.log(node);
+		 	node.click();
+		 }
+	 }
+
+	// var viewMode = getCookie("view-mode");
+	// if(viewMode == "desktop"){
+	//     viewport.setAttribute('content', 'width=1024');
+	// }else if (viewMode == "mobile"){
+	//     viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+	// }
+
+</script>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8; width=1024">
+	<!-- <meta http-equiv="Content-Type" content="width=1024"> -->
+	
+
+<!-- ===============================================================================================================================================-->
+<!-- TAB-BAR  -->
+	<title>Aditya Ahuja</title>
+	<meta name="author" content="Aditya Ahuja | Home">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" type="image/jpg" href="images/pentagram.jpg">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body class="bg_colour">
+
+	<table border=0 class="bg_colour" style="width:100%;max-width:1000px;border:0px;border-spacing:10px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:rgba(255, 255, 255, 0.3);"><tbody>
+		<tr>
+			<td colspan=2>
+			<br>
+			<p style="text-align:center">
+				<name>BlackSwan Demo</name>
+			</p>
+			<hr class="hard"><br>
+			</td>
+		</tr>
+		
+		<p> TODO </p>
+
+</body>
+</html>
