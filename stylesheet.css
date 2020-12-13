@@ -330,3 +330,14 @@ Can replace with : hoverZoomLink
 .tdTeach{
   width:120px;
 }
+
+
+p.info{
+	text-align: center;
+	color: purple;
+}
+
+a.info{
+	color:purple;
+	text-decoration: underline;
+}
