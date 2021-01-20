@@ -459,7 +459,7 @@
 							 <br><i> In Progress. </i>
 							 <br>
 							 <p>
-								 <br> We explore compositional reasoning on the CATER dataset by learning action embeddings and by using object centric representations.
+								 <br> We explore compositional reasoning on the <a href='https://rohitgirdhar.github.io/CATER/'>CATER dataset</a> by learning action embeddings and by using object centric representations.
 							 </p>
 						 </td>
 					 </tr>
@@ -933,7 +933,8 @@
 
 	var links = document.getElementsByTagName('a');
 	for (var i = 0; i < links.length; ++i) {
-		links[i].setAttribute('target', '_blank');
+		if(!links[i].href.includes('#') && links[i].href.includes('javascript')) 
+			links[i].setAttribute('target', '_blank');
 	}	
  </script>
  </html>
