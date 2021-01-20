@@ -1,72 +1,13 @@
 <!DOCTYPE HTML>
 
-<!-- js script to toggle section visibility. -->
-<script type="text/javascript">
-	
-	 function toggle_vis(id) {
-			 var e = document.getElementById(id);
-			 if (e.style.display == 'none')
-					 e.style.display = 'inline';
-			 else
-					 e.style.display = 'none';
-	 }
-
-	 let coll = document.getElementsByClassName("collapsible");
-	//  console.log(coll)
-
-	 function isOpen(node){
-	 	// console.log(node.getAttribute('aria-expanded'));
-	 	return (node.getAttribute('aria-expanded') === null) || node.getAttribute('aria-expanded');
-	 }
-
-	 function ToggleAll(){
-		 let totalOpen = 0;
-		 for(let i=0; i<coll.length; i++){
-			 if(coll[i].id == 'demo') continue
-			 if(eval(isOpen(coll[i]))) totalOpen++;
-		 }
-		//  console.log(totalOpen);
-
-		 if(totalOpen !== 0){
-			 for(let i=0; i<coll.length; i++){
-				if(coll[i].id == 'demo') continue
-				if(eval(isOpen(coll[i]))) coll[i].click();
-			 }
-		 }
-		 else{
-			 for(let i=0; i<coll.length; i++){
-				if(coll[i].id == 'demo') continue
-				coll[i].click();
-			 }
-		 }
-	 }
-
-	 function Expand(nodeID){
-		 let node = document.getElementById(nodeID);
-		 if(!eval(isOpen(node))){
-		 	// console.log(node);
-		 	node.click();
-		 }
-	 }
-
-	// var viewMode = getCookie("view-mode");
-	// if(viewMode == "desktop"){
-	//     viewport.setAttribute('content', 'width=1024');
-	// }else if (viewMode == "mobile"){
-	//     viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
-	// }
-
-</script>
-
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8; width=1024">
 	<!-- <meta http-equiv="Content-Type" content="width=1024"> -->
 	
-
 <!-- ===============================================================================================================================================-->
 <!-- TAB-BAR  -->
-	<title>Aditya Ahuja</title>
+	<title>BlackSwan Demo</title>
 	<meta name="author" content="Aditya Ahuja | Home">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -90,10 +31,56 @@
 			<hr class="hard"><br>
 			</td>
 		</tr>
+		
+		<tr >
+		  <td><img src="data/ESoWC/Demo_ForecastX_30s_5x_720p.gif" width=100%></td>
+		  <td><img src="data/ESoWC/Demo_Terminal_Full_1.5x_2fps_720p.gif" width=100%></td>
+		</tr>
+		<tr>
+			<td align=center>
+			  <p width: 20%;>
+			  [ <a href="data/ESoWC/Demo_ForecastX_30s_5x_720p.gif" target=blank>Demo</a> | 
+			  <a href="data/ESoWC/Demo_ForecastX_Full_5x.gif" target=blank>Full Size</a> ]
+			  </p>
+			  </td>
+			<td align=center>
+			  <p width: 20%;>
+			  [ <a href="data/ESoWC/Demo_Terminal_Full_1.5x_2fps_720p.gif" target=blank>Demo</a> | 
+			  <a href="data/ESoWC/Demo_Terminal_Full_1.5x.gif" target=blank>Full Size</a> ]</p>
+			</td>
+		</tr>
+		<tr style="padding:10px;">
+			<td colspan=2 style="padding:10px">
+				<p>NOTES: 
+					<ul>
+						<li>The Web Demo (left) shows BlackSwan monitoring a realtime metric (Bytes Received by the MARSOD Database) 
+							using a modified version of the <a href='https://pypi.org/project/forecast-x/'>ForecastX algorithm</a>.</li>
+						<ul>
+							<li>The Green Time Series (top) shows the incoming metric values.</li>
+							<li>The Red Time Series (bottom) shows the predicted Anomaly Scores.</li>
+							<li>Periods containing an annomaly are labelled with a text promt.</li>  
+							<li>The Anomaly Scores Limits (y axis of bottom graph) changes dynamically with the currently shown Anomaly Scores.</li>
+						</ul>
+						<br>
+						<li>The Terminal Demo (right) shows BlackSwan working in a Bash Shell.</li>
+						<ul>
+							<li>Logs containing training and evaluation timestamps are shown in Green.</li>
+							<li>Logs containing the currently executing module are shown in Blue.</li> 
+							<li>The output paths for these logs can be configured by the provided config files.</li>
+						</ul>
+					</ul>
+				</p> 
+			</td>
+		</tr>
 
 		<tr>
-			<td>TODO</td>	
+			<td colspan=2 style="padding:10px">
+				<hr class="hard">
+				<br>
+				<p align="right">[ <a href="index.html">Go back to Home Page</a> ]</p>
+			</td>
 		</tr>
-		
+	  </table>
+	  
 </body>
 </html>

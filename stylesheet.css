@@ -278,6 +278,36 @@ Can replace with : hoverZoomLink
   transition-duration: 0.01s;
 }
 
+
+.collapsible_demo{
+  /*background-color: #f6f6f6;*/
+  background-color: #FFB09A;
+  color: #000000;
+  cursor: pointer;
+  padding: 7px 30px;
+  border-radius: 5px;
+  /*width: 100%;*/
+  /*border: 1;*/
+  border-width: 0px;
+  text-align: left;
+  outline: none;
+
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  /* font-family: 'Quattrocento', Verdana, sans-serif; */
+  font-size: 20px;
+  font-variant-caps: small-caps;
+  /*border: 1px solid #000000;*/
+}
+
+.collapsible_demo:hover {
+  background-color: #FF9E82;
+  /*background-color: #e6e6e6;*/
+  border-color:#aaaaaa;
+  border-width: 0px;
+  color: #000000;
+  transition-duration: 0.01s;
+}
+
 .active {
   background-color: #f0f0f0;
   color: #000000;
@@ -306,7 +336,7 @@ Can replace with : hoverZoomLink
 }
 
 .bg_colour {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .astext {
@@ -320,17 +350,16 @@ Can replace with : hoverZoomLink
 }
 
 .tdNews{
-  width:86px;
+  width:80px;
 }
 
 .tdWork{
-  width:152px;
+  width:145px;
 }
 
 .tdTeach{
-  width:120px;
+  width:110px;
 }
-
 
 p.info{
 	text-align: center;
