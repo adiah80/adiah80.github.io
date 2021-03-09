@@ -124,8 +124,10 @@
 			<a href="mailto:f20170080@goa.bits-pilani.ac.in" target="blank">Email</a>
 			&nbsp|&nbsp
 			<a href="CV__Aditya_Ahuja.pdf" target="blank">CV</a>
+			<!-- &nbsp|&nbsp -->
+			<!-- <a href="Resume__Aditya_Ahuja.pdf" target="blank">Resume</a> -->
 			&nbsp|&nbsp
-			<a href="Resume__Aditya_Ahuja.pdf" target="blank">Resume</a>
+			<a href="https://scholar.google.com/citations?user=npbeN2AAAAAJ" target="blank">Google Scholar</a>
 			&nbsp|&nbsp
 			<a href="https://github.com/adiah80" target="blank">Github</a>
 			&nbsp|&nbsp
@@ -165,7 +167,7 @@
 		<td class="tdNews"><p style="color:purple; display:inline">Feb '21</p></td>
 		<td>
 			Check out our latest preprint: 
-			<a href="papers/Incorporating_Domain_Knowledge_into_Deep_Neural_Networks__IJCAI21.pdf">Incorporating Domain Knowledge into Deep Neural Networks</a>
+			<a href="https://arxiv.org/abs/2103.00180">Incorporating Domain Knowledge into Deep Neural Networks</a>
 			from 
 			<a href="https://www.bits-pilani.ac.in/appcair/">APPCAIR</a>!
 		</td>
@@ -524,7 +526,6 @@
 						</td>
 						<td style="padding:20px;width:75%;vertical-align:middle">
 							<papertitle>Incorporating Domain Knowledge into Deep Neural Networks</papertitle>
-							[<a href="papers/Incorporating_Domain_Knowledge_into_Deep_Neural_Networks__IJCAI21.pdf"> Preprint </a>]
 							<br>
 							<i>Submitted to International Joint Conference on Artificial Intelligence (IJCAI), 2021</i>
 							<br>
@@ -532,7 +533,8 @@
 								<a href="https://www.sharadchitlang.ai/">Sharad Chitlangia</a>,
 								<a href="https://adiah80.github.io/">Aditya Ahuja</a>, 
 								<a href="https://scholar.google.com.au/citations?user=zpNTeogAAAAJ&hl=en">Ashwin Srinivasan</a>
-								
+							<br>
+							[<a href="https://arxiv.org/abs/2103.00180"> Preprint </a>]
 							<br><br>
 							<p>
 								<b>Abstract:</b> 
@@ -977,7 +979,7 @@
 
 	var links = document.getElementsByTagName('a');
 	for (var i = 0; i < links.length; ++i) {
-		if(!links[i].href.includes('#') && links[i].href.includes('javascript')) 
+		if(!links[i].href.includes('#') && !links[i].href.includes('javascript')) 
 			links[i].setAttribute('target', '_blank');
 	}	
  </script>
